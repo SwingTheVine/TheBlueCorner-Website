@@ -3,6 +3,8 @@ html {
   font-family: Roboto, Arial;
 }
 
+/* Navigation Bar */
+
 .navbar-grid {
   display: grid;
   grid-template-columns: 75px 200px 1fr 400px;
@@ -37,6 +39,8 @@ html {
 .navbar-a-name:hover {
   text-decoration: underline;
 }
+
+/* Buttons */
 
 .buttons-grid {
   display: grid;
@@ -76,14 +80,37 @@ html {
 /* Content */
 
 .content {
-  background-color: white;
   margin-top: 100px;
+  padding-top: 16px;
+}
+
+/* Content & Footer */
+
+.content,
+.footer {
+  background-color: white;
   margin-left: auto;
   margin-right: auto;
   width: 664px;
   text-align: center;
-  padding-top: 16px;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 50px;
+}
+
+/* Footer */
+
+.footer {
+  padding-top: 200px;
+}
+
+.footer-a {
+  text-decoration: none;
+}
+
+/* Do note that changing these values
+  may violate trademarks. */
+.footer-icon {
+  height: 32px;
+  margin: 16px;
 }
