@@ -44,7 +44,7 @@ html {
 
 .buttons-grid {
   display: grid;
-  grid-template-columns: 76px 88px 100px 66px;
+  grid-template-columns: 75px 85px 85px 65px;
   column-gap: 8px;
   margin-right: 20px;
   justify-content: right;
@@ -52,29 +52,28 @@ html {
 
 .buttons {
   display: inline-block;
-  border: solid;
-  border-width: 2px;
+  border-width: 0px;
   border-radius: 16px;
-  padding-top: 1px;
+  padding-top: 6px;
   padding-left: 12px;
-  padding-bottom: 1px;
+  padding-bottom: 6px;
   padding-right: 12px;
   margin: auto;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  background: #51E9F4;
+  background: #0bbdcf;
   transition:
     background-color 0.15s;
 }
 
 .buttons:hover {
-  background-color: #46cbd4;
+  background-color: #0c97ae;
 }
 
 .buttons:active {
-  background-color: #33949b;
+  background-color: #11788d;
 }
 
 /* Content */
