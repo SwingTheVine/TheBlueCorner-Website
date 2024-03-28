@@ -19,60 +19,8 @@
   </head>
   <body>
 
-    <!-- The Navigation Bar (Grid) -->
-    <div class="navbar-grid">
-
-      <!-- NavBar Image (1, 1) -->
-      <div>
-        <a href="https://thebluecorner.net/">
-          <img class="navbar-image" src="./assets/icons/TBC_Logo.png">
-        </a>
-      </div>
-
-      <!-- NavBar Title (1, 2) -->
-      <a class="navbar-a-name" href="https://thebluecorner.net/">
-        <div class="navbar-name">
-          The Blue Corner
-        </div>
-      </a>
-
-      <!-- Blank Space (1, 3) -->
-      <div></div>
-
-      <!-- Button Grid (1, 4) -->
-      <div class="buttons-grid">
-
-        <!-- About Us Button (1, 1) -->
-        <a href="javascript:void(0)">
-          <button class="buttons">
-            About<br>Us
-          </button>
-        </a>
-
-        <!-- Our History Button (1, 2)-->
-        <a href="javascript:void(0)">
-          <button class="buttons">
-            Our<br>History
-          </button>
-        </a>
-
-        <!-- Hall Of Fame Button (1, 3) -->
-        <a href="javascript:void(0)">
-          <button class="buttons">
-            Hall Of<br>Fame
-          </button>
-        </a>
-
-        <!-- Join Us Button (1, 4) -->
-        <a href="javascript:void(0)">
-          <button class="buttons">
-            Join<br>Us
-          </button>
-        </a>
-        <!-- End of Button Grid -->
-      </div>
-      <!-- End of Navigation Bar Grid -->
-    </div>
+    <!-- Inserts the Navigation Bar -->
+    <div id="insert-navbar"></div>
 
     <!-- Main content on the page -->
     <div class="content">
@@ -107,7 +55,7 @@
               To learn more about our history, click the button below.
               To learn more about our chain of command, keep reading.
             </p>
-            <a href="javascript:void(0)">
+            <a href="/history.html">
               <button class="buttons">
                 Our History
               </button>
@@ -298,36 +246,12 @@
       <!-- End of Content -->
     </div>
 
-    <!-- Footer of the page -->
-    <div class="footer">
-
-      <!-- Reddit Icon -->
-      <a class="footer-a" href="https://www.reddit.com/r/TheBlueCorner/">
-        <img class="footer-icon" src="./assets/icons/Reddit_Favicon.svg">
-      </a>
-
-      <!-- Discord Icon -->
-      <a class="footer-a" href="https://discord.gg/5X4GnCuuXZ/">
-        <img class="footer-icon" src="./assets/icons/Discord_Favicon.svg">
-      </a>
-
-      <!-- Twitter Icon -->
-      <a class="footer-a" href="https://twitter.com/bluecornerplace/">
-        <img class="footer-icon" src="./assets/icons/Twitter_Favicon.svg">
-      </a>
-
-      <!-- Youtube Icon -->
-      <a class="footer-a" href="https://www.youtube.com/channel/UC2B9Jk-bH4eo_zL5kwEk-Xw/">
-        <img class="footer-icon" src="./assets/icons/Youtube_Favicon.png">
-      </a>
-
-      <!-- Twitch Icon -->
-      <a class="footer-a" href="https://www.twitch.tv/thebluecorner_chuck/">
-        <img class="footer-icon" src="./assets/icons/Twitch_Favicon.svg">
-      </a>
-    </div>
+    <!-- Inserts the footer -->
+    <div id="insert-footer"></div>
 
     <!-- Scripts -->
+    <script src="./js/insertNavbar.js"></script>
+    <script src="./js/insertFooter.js"></script>
     <script src="./js/profilePicture.js"></script>
   </body>
 </html>
