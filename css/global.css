@@ -91,16 +91,46 @@ html {
   margin-left: auto;
   margin-right: auto;
   width: 664px;
-  text-align: center;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 50px;
+}
+
+.content-header {
+  text-align: center;
+}
+
+.content-subheader {
+  padding-top: 16px;
+  margin-bottom: 2px;
+}
+
+.content-image-right {
+  display: grid;
+  grid-template-columns: 1fr 250px;
+}
+
+.content-image-left {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.content-image-container {
+  text-align: center;
+}
+
+.content-images {
+  margin-top: 80px;
+  width: 90%;
+  border: solid;
+  border-width: 1px;
 }
 
 /* Footer */
 
 .footer {
   padding-top: 200px;
+  text-align: center;
 }
 
 .footer-a {
@@ -112,4 +142,9 @@ html {
 .footer-icon {
   height: 32px;
   margin: 16px;
+}
+
+/* Icons */
+.profile-icons {
+  border-radius: 50%;
 }
