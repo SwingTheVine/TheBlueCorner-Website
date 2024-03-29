@@ -1,8 +1,14 @@
 const contentP = document.querySelectorAll('.content-p');
 const names = [
+  '9kz7',
+  'Chuck',
+  'j75',
+  'Nexiy',
   'Scout107',
   'SwingTheVine',
-  'Nexiy'
+  'TheRageBot',
+  'TheStruggleIsALie',
+  'Xenoglitch'
 ];
 
 names.forEach(name => {

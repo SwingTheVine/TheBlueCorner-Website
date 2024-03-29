@@ -1,0 +1,41 @@
+.social-a {
+  text-decoration: none;
+}
+
+.social-content-image-left {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin-top: 48px;
+  padding: 16px 16px 16px 16px;
+  color: black;
+  transition:
+    background-color 0.25s;
+}
+
+.social-content-image-left:hover {
+  background: lightgray;
+}
+
+.social-content-flavor {
+  display: grid;
+  grid-template-rows: 32px 20px 1fr;
+  margin-left: 32px;
+}
+
+.social-image-container {
+  text-align: center;
+}
+
+.social-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.social-subname {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.content-p {
+  margin-top: 14px;
+}
