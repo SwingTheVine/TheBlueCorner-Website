@@ -1,0 +1,33 @@
+.hof-content-image-left {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  margin-top: 64px;
+}
+
+.hof-content-flavor {
+  display: grid;
+  grid-template-rows: 32px 18px 1fr;
+  margin-left: 32px;
+}
+
+.hof-image-container {
+  text-align: center;
+}
+
+.hof-image {
+  border-radius: 50%;
+}
+
+.hof-name {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.hof-roles {
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.content-p {
+  margin-top: 14px;
+}
