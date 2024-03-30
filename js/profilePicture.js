@@ -3,14 +3,17 @@ const contentP = document.querySelectorAll('.content-p');
 
 // Creates an array of all of the names to search for.
 const names = [
+  '5opka',
   '9kz7',
   'Bratishkinoff',
   'ChippedJosh',
   'Chuck',
   'cooltrain7',
   'Destiny',
+  'IKOI',
   'j75',
   'Nexiy',
+  'q77e',
   'Scout107',
   'SwingTheVine',
   'Tarik',

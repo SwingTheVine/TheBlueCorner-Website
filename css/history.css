@@ -30,6 +30,12 @@
   color: gray;
 }
 
+/* Scout you're killing me... */
+.history-sub-sub-sub-subheader {
+  margin-top: 32px;
+  color: gray;
+}
+
 .history-quote {
   font-size: 18px;
   text-align: center;
@@ -50,6 +56,10 @@
 
 <div class="history-sub-sub-subheader">
   &emsp;&emsp;&nbsp;
+</div>
+
+<div class="history-sub-sub-sub-subheader">
+  &emsp;&emsp;&emsp;
 </div>
 
 /u/Andrewcshore315
