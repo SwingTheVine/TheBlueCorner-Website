@@ -7,6 +7,7 @@ const names = [
   'Bratishkinoff',
   'ChippedJosh',
   'Chuck',
+  'cooltrain7',
   'Destiny',
   'j75',
   'Nexiy',
@@ -21,18 +22,15 @@ const names = [
   'Zugu'
 ];
 
-// For each name...
-names.forEach(name => {
+// Create a new RegEx to search for every name. case-INsensitive
+// If the name is inside another container (within <>) it is ignored.
+// For example, <a href="SwingTheVine"> is ignored.
+const name_regex = new RegExp('(?![^<]*>|[^<>]*<\/)(' + names.join('|') + ')', 'gi');
 
-  // Create a new RegEx to search for that name. case-INsensitive
-  // If the name is inside another container (within <>) it is ignored.
-  // For example, <a href="name"> is ignored.
-  const name_regex = new RegExp('(?![^<]*>|[^<>]*<\/)(' + name + ')', 'gi');
-
-  // For every body of text...
-  contentP.forEach(container => {
-    // Replace the name with the pfp + name
-    const nameWithImage = container.innerHTML.replace(name_regex, '<img class="profile-icons" src="./assets/icons/pfp/' + name + '_Icon.webp" height="16"> ' + name);
-    container.innerHTML = nameWithImage;
-  })
-})
+// For every body of text...
+contentP.forEach(container => {
+  // Replace the name with the pfp + name
+  container.innerHTML = container.innerHTML.replace(name_regex, name => {
+    return '<img class="profile-icons" src="./assets/icons/pfp/' + name + '_Icon.webp" height="16"> ' + name;
+  });
+});
