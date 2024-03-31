@@ -17,6 +17,7 @@ const names = [
   'IKOI',
   'j75',
   'Kapo',
+  'Ludwig',
   'Magoulas',
   'Mizkif',
   'Nexiy',
