@@ -50,6 +50,11 @@ html {
   justify-content: right;
 }
 
+.buttons-a {
+  text-decoration: none;
+}
+
+/* Content & Buttons */
 .content-buttons,
 .buttons {
   display: inline-block;
@@ -69,20 +74,20 @@ html {
     background-color 0.15s;
 }
 
+.content-buttons:hover,
 .buttons:hover {
   background-color: #0c97ae;
 }
 
+.content-buttons:active,
 .buttons:active {
   background-color: #11788d;
 }
 
-/* Content & Buttons */
+/* Content */
 .content-buttons {
   margin-top: 16px;
 }
-
-/* Content */
 
 .content {
   margin-top: 100px;
