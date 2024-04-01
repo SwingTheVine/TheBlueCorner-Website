@@ -3,8 +3,6 @@ html {
   font-family: Roboto, Arial;
 }
 
-/* Navigation Bar */
-
 .navbar-grid {
   display: grid;
   grid-template-columns: 75px 200px 1fr 400px;
@@ -40,8 +38,6 @@ html {
   text-decoration: underline;
 }
 
-/* Buttons */
-
 .buttons-grid {
   display: grid;
   grid-template-columns: 75px 85px 85px 65px;
@@ -54,7 +50,6 @@ html {
   text-decoration: none;
 }
 
-/* Content & Buttons */
 .content-buttons,
 .buttons {
   display: inline-block;
@@ -84,7 +79,6 @@ html {
   background-color: #11788d;
 }
 
-/* Content */
 .content-buttons {
   margin-top: 16px;
 }
@@ -137,8 +131,6 @@ html {
   margin-top: 14px;
 }
 
-/* Content & Footer */
-
 .content,
 .footer {
   background-color: white;
@@ -150,26 +142,21 @@ html {
   padding-bottom: 50px;
 }
 
-/* Footer */
-
 .footer {
   padding-top: 160px;
   text-align: center;
-  color: gray;
+  color: black;
 }
 
 .footer-a {
   text-decoration: none;
 }
 
-/* Do note that changing these values
-  may violate trademarks. */
 .footer-icon {
   height: 32px;
   margin: 16px;
 }
 
-/* Icons */
 .profile-icons {
   border-radius: 50%;
 }
