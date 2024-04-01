@@ -1,0 +1,7 @@
+# Disallow scrapeing for all robots on the following pages...
+User-agent: *
+Disallow: /template.html
+Disallow: /TBC.code-workspace
+Disallow: /.gitignore
+Disallow: /.gitattributes
+Disallow: /README.md
