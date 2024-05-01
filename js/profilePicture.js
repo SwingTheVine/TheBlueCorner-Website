@@ -7,6 +7,7 @@ const names = [
   '9kz7',
   'Avtin',
   'Bratishkinoff',
+  'CellBit',
   'Cestovina3',
   'Cheeseface',
   'ChippedJosh',
@@ -42,8 +43,10 @@ const names = [
   'TheStruggleIsALie',
   'TheTrueCole',
   'Tumblurr',
+  'WilburSoot',
   'Xenoglitch',
   'xQc',
+  'Zender',
   'Zoe',
   'Zugu'
 ];
