@@ -50,7 +50,6 @@
 .page-content {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-
 }
 
 .sidebar {
@@ -62,6 +61,8 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 16px;
+  width: 200px;
+  justify-self: right;
   height: 500px;
   display: grid;
   grid-template-rows: 20px;
