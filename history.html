@@ -134,7 +134,7 @@
       </div>
 
       <!-- Content -->
-      <main class="content">
+      <main class="content" id="content">
 
         <!-- Top Text -->
         <div id="top">
@@ -2950,20 +2950,6 @@
     <script src="./js/insertNavbar.js" async></script>
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
-    <script>
-      window.addEventListener('scroll', function() {
-        var sidebar = document.getElementById('sidebar');
-        sidebar.style.marginTop = (window.scrollY + 100) + 'px';
-      });
-    </script>
-    <script>
-      function scrollToPosition(id) {
-          var element = document.getElementById(id);
-          if (element) {
-              element.scrollIntoView({ block: 'start', inline: 'nearest' });
-              window.scrollBy(0, -124);
-          }
-        }
-    </script>
+    <script src="./js/sidebarScroll.js" defer></script>
   </body>
 </html>
