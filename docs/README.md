@@ -10,7 +10,7 @@
   <br>
   If you like the website, consider donating! It helps me keep the site running.
   <br>
-  <img alt="Ko-fi Badge" src="https://img.shields.io/badge/Support_the_website_on_Ko--fi-lightblue?style=flat&logo=Ko-fi">
+  <a href="https://ko-fi.com/P5P1TW1PB" target="_blank"><img alt="Ko-fi Badge" src="https://img.shields.io/badge/Support_the_website_on_Ko--fi-lightblue?style=flat&logo=Ko-fi"></a>
 </p>
 
 <h2>Join The Discord!</h2>
