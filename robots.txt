@@ -4,4 +4,4 @@ Disallow: /template.html
 Disallow: /TBC.code-workspace
 Disallow: /.gitignore
 Disallow: /.gitattributes
-Disallow: /README.md
+Disallow: /docs/README.md
