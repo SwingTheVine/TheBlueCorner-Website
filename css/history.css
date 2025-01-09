@@ -1,41 +1,47 @@
+/* Page content */
 .history {
   margin-top: 64px;
 }
 
-.history-a {
-  text-decoration: none;
-}
-
+/* Author text */
 .history-author {
   text-align: center;
   color: gray;
   font-size: 20px;
+  margin-top: 0px;
 }
 
-.history-subheader {
+/* Header 2 */
+h2 {
   font-size: 28px;
   font-weight: bold;
   margin-top: 64px;
 }
 
-.history-sub-subheader {
+/* Header 3 */
+h3 {
   font-size: 20px;
   font-weight: bold;
   margin-top: 32px;
 }
 
-.history-sub-sub-subheader {
+/* Header 4 */
+h4 {
   font-size: 20px;
   margin-top: 32px;
   color: gray;
+  font-weight: normal;
 }
 
-/* Scout you're killing me... */
-.history-sub-sub-sub-subheader {
+/* Header 5 */
+h5 {
+  font-size: 1em;
   margin-top: 32px;
   color: gray;
+  font-weight: normal;
 }
 
+/* Quote text */
 .history-quote {
   font-size: 18px;
   text-align: center;
@@ -47,11 +53,13 @@
   width: 75%;
 }
 
-.page-content {
+/* Grid for sidebar and page */
+.sidebar-and-page {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
 }
 
+/* Sidebar grid */
 .sidebar {
   background-color: white;
   margin-top: 100px;
@@ -69,11 +77,12 @@
   overflow: auto;
 }
 
-.sidebar-content,
-.sidebar-sub-content,
-.sidebar-sub-sub-content,
-.sidebar-sub-sub-sub-content,
-.sidebar-sub-sub-sub-sub-content {
+/* Sidebar styling shared between all links */
+.sidebar-link-h1,
+.sidebar-link-h2,
+.sidebar-link-h3,
+.sidebar-link-h4,
+.sidebar-link-h5 {
   padding-top: 2px;
   padding-bottom: 2px;
   margin-bottom: 4px;
@@ -82,50 +91,44 @@
     background-color 0.25s;
 }
 
-.sidebar-content:hover,
-.sidebar-sub-content:hover,
-.sidebar-sub-sub-content:hover,
-.sidebar-sub-sub-sub-content:hover,
-.sidebar-sub-sub-sub-sub-content:hover {
+/* Sidebar styling shared between all links when mouse-over */
+.sidebar-link-h1:hover,
+.sidebar-link-h2:hover,
+.sidebar-link-h3:hover,
+.sidebar-link-h4:hover,
+.sidebar-link-h5:hover {
   background-color: lightgray;
+  cursor: pointer;
 }
 
-.sidebar-sub-content {
+/* Sidebar link h2 specific */
+.sidebar-link-h2 {
   padding-left: 10px;
 }
 
-.sidebar-sub-sub-content,
-.sidebar-sub-sub-sub-content,
-.sidebar-sub-sub-sub-sub-content {
+/* Sidebar link h3, h4, h5 specific */
+.sidebar-link-h3,
+.sidebar-link-h4,
+.sidebar-link-h5 {
   color: gray;
   padding-left: 20px;
 }
 
-.sidebar-sub-sub-sub-content,
-.sidebar-sub-sub-sub-sub-content {
+/* Sidebar link h4, h5 specific */
+.sidebar-link-h4,
+.sidebar-link-h5 {
   font-weight: normal;
   padding-left: 30px;
 }
 
-.sidebar-sub-sub-sub-sub-content {
+/* Sidebar link h5 specific */
+.sidebar-link-h5 {
   padding-left: 40px;
 }
 
 
 /*
 &#x2019;
-
-<p class="content-p">
-  &emsp;&emsp;&emsp;
-</p>
-
-<div class="history-sub-sub-subheader">
-  &emsp;&emsp;&nbsp;
-</div>
-
-<div class="history-sub-sub-sub-subheader">
-  &emsp;&emsp;&emsp;
-</div>
 
 "Cornerness, Blueness, and bottom-rightness are the three uncompromisable positions of the True Corner." - Scout107
 "STAY TRUE, STAY BLUE" - Nexiy

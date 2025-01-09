@@ -10,15 +10,14 @@
   margin-left: 32px;
 }
 
-.hof-image-container {
-  text-align: center;
-}
-
 .hof-image {
+  display: block;
+  margin: auto;
   border-radius: 50%;
 }
 
 .hof-roles {
+  margin-top: 0px;
   font-size: 14px;
   color: gray;
 }

@@ -2,7 +2,7 @@
 window.addEventListener('scroll', function() {
   var sidebar = document.getElementById('sidebar'); // Retrieves the sidebar
   var sidebarHeight = window.getComputedStyle(sidebar).height; // Retrieves the sidebar height
-  var contentHeight = window.getComputedStyle(document.getElementById('content')).height; // Retrieves the content height
+  var contentHeight = window.getComputedStyle(document.getElementById('content-main')).height; // Retrieves the content height
   
   // If the bottom of the sidebar is above the bottom of the content...
   if (this.window.scrollY < parseFloat(contentHeight) - parseFloat(sidebarHeight)) {
