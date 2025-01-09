@@ -40,10 +40,10 @@ html {
   text-decoration: underline;
 }
 
-/* Navbar grid for buttons */
-.navbar-button-grid {
-  display: grid;
-  grid-template-columns: 75px 85px 85px 65px;
+/* Navbar flexbox for buttons */
+.navbar-button-flex {
+  display: flex;
+  flex-direction: row;
   column-gap: 8px;
   margin-right: 20px;
   justify-content: right;
