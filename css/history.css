@@ -73,7 +73,7 @@ h5 {
   justify-self: right;
   height: 500px;
   display: grid;
-  grid-template-rows: 20px;
+  grid-template-rows: auto;
   overflow: auto;
 }
 
