@@ -60,13 +60,13 @@ html {
   padding-left: 12px;
   padding-bottom: 6px;
   padding-right: 12px;
-  margin-right: auto;
   font-family: Arial;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
   background: #0bbdcf;
   text-decoration: none;
+  text-align: center;
   transition:
     background-color 0.15s;
 }
@@ -86,6 +86,7 @@ html {
 /* Content button */
 .content-button {
   margin-top: 16px;
+  margin-right: auto;
 }
 
 /* Any anchor with child button */
@@ -183,7 +184,7 @@ footer {
 footer {
   padding-top: 160px;
   text-align: center;
-  color: grey;
+  color: #727272;
 }
 
 /* Footer icon images*/
