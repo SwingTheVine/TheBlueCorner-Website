@@ -51,7 +51,8 @@ html {
 
 /* Website buttons */
 .content-button,
-.navbar-button {
+.navbar-button,
+.screen-reader-bypass {
   display: inline-block;
   color: #000000;
   border-width: 0px;
@@ -73,13 +74,15 @@ html {
 
 /* Website buttons mouse-over*/
 .content-button:hover,
-.navbar-button:hover {
+.navbar-button:hover,
+.screen-reader-bypass:hover {
   background-color: #0c97ae;
 }
 
 /* Website buttons pressed*/
 .content-button:active,
-.navbar-button:active {
+.navbar-button:active,
+.screen-reader-bypass:active {
   background-color: #11788d;
 }
 
@@ -199,14 +202,26 @@ footer {
 }
 
 /* Only display to screen-readers */
-.screen-reader-only {
+.screen-reader-only,
+.screen-reader-bypass:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
+  clip-path: inset(50%);
+}
+
+/* Unhides the skip link */
+.screen-reader-bypass:focus {
+  position: absolute;
+  top: 100px;
+  z-index: 999;
+  width: auto;
+  height: auto;
+  clip-path: none;
+  overflow: visible;
 }

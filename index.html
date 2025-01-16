@@ -22,11 +22,14 @@
   </head>
   <body>
 
+    <!-- The Skip Link -->
+    <a class="screen-reader-bypass" role="button" onclick="scrollToClass('page')" tabindex="0" href="#page">Skip to page content</a>
+
     <!-- The Navigation Bar -->
-    <nav id="navbar"></nav>
+    <div id="navbar" role="banner"></div>
 
     <!-- All of the page -->
-    <div class="page">
+    <div class="page" tabindex="-1">
 
       <!-- Main content on the page -->
       <main>
@@ -145,7 +148,7 @@
 
             <!-- Congress: Staff-->
             <div>
-              <h2>Congress: Staff</h2>
+              <h3>Staff</h3>
               <p>
                 The leading body of Congress is the community's Admins.
                 Staff in this position are excellent at leadership and handling high-stress situations.
@@ -158,7 +161,7 @@
 
             <!-- Congress: Diplomats -->
             <div>
-              <h2>Congress: Diplomats</h2>
+              <h3>Diplomats</h3>
               <p>
                 The role of diplomats is to gather and maintain healthy alliances with other communities.
                 This group excels in communication and professionalism.
@@ -174,7 +177,7 @@
 
             <!-- Congress: Diplomats -->
             <div>
-              <h2>Congress: Moderators</h2>
+              <h3>Moderators</h3>
               <p>
                 The role of the Moderators is to manage certain aspects of the community whenever the Admins cannot.
                 Moderating chat, posting on social media, and assisting the Voice Call channel, jobs assigned to members of this group greatly vary.
@@ -206,7 +209,7 @@
             <!-- Unit 1 -->
             <div class="content-image-right">
               <div class="content-flavor">
-                <h2>Units: Unit 1 (True Corner Knights)</h2>
+                <h3>Unit 1 (True Corner Knights)</h3>
                 <p>
                   This Unit is the core Unit of the four.
                   The purpose of this group is to keep the bottom right corner pixel blue.
@@ -228,7 +231,7 @@
                 <source src="./assets/videos/TBC_Unit2.webm" type="video/webm">
               </video>
               <div class="content-flavor">
-                <h2>Units: Unit 2 (Logo Knights)</h2>
+                <h3>Unit 2 (Logo Knights)</h3>
                 <p>
                   This Unit is the face of The Blue Corner and is responsible for maintaining the logo.
                   The logo changes occasionally but always consists of the text "THEBLUECORNER."
@@ -244,7 +247,7 @@
             <!-- Unit 3 -->
             <div class="content-image-right">
               <div class="content-flavor">
-                <h2>Units: Unit 3 (Border Knights)</h2>
+                <h3>Unit 3 (Border Knights)</h3>
                 <p>
                   This Unit is responsible for maintaining the border of The Blue Corner's territory.
                   Led by Nexiy, this group is responsible for keeping the border pixels blue.
@@ -267,7 +270,7 @@
                 <source src="./assets/videos/TBC_Unit4.webm" type="video/webm">
               </video>
               <div class="content-flavor">
-                <h2>Units: Unit 4 (Knights of the Field)</h2>
+                <h3>Unit 4 (Knights of the Field)</h3>
                 <p>
                   This Unit is the body of The Blue Corner.
                   It is responsible for maintaining the sea of blue within our territory.
@@ -295,5 +298,6 @@
     <script src="./js/insertNavbar.js" async></script>
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
+    <script src="./js/scrollCustom.js" defer></script>
   </body>
 </html>
