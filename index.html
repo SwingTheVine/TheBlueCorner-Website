@@ -79,9 +79,13 @@
               </a>
             </p>
           </div>
-          <video class="content-image" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of the xQc logo being replaced by blue.">
-            <source src="./assets/videos/TBC.webm" type="video/webm">
-          </video>
+          <div class="content-video">
+            <video id="video-TBC" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of the xQc logo being replaced by blue.">
+              <source src="./assets/videos/TBC.webm" type="video/webm">
+            </video>
+            <div class="video-shade"></div>
+            <a href="#" class="video-button" role="button" aria-label="Pause the video using the 'space' or 'tab' keys." aria-controls="video-TBC">⏸</a>
+          </div>
           <!-- End of Who We Are -->
         </div>
 
@@ -219,17 +223,25 @@
                   Previous generals of this Unit were: Scout107.
                 </p>
               </div>
-              <video class="content-image" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of stray colored pixels being replaced with blue pixels.">
-                <source src="./assets/videos/TBC_Unit1.webm" type="video/webm">
-              </video>
+              <div class="content-video">
+                <video id="video-TBC-Unit1" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of stray colored pixels being replaced with blue pixels.">
+                  <source src="./assets/videos/TBC_Unit1.webm" type="video/webm">
+                </video>
+                <div class="video-shade"></div>
+                <a href="#" class="video-button" role="button" aria-label="Pause the video using the 'space' or 'tab' keys." aria-controls="video-TBC-Unit1">⏸</a>
+              </div>
               <!-- End of Unit 1-->
             </div>
 
             <!-- Unit 2 -->
             <div class="content-image-left">
-              <video class="content-image" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of the blue corner art logo being griefed and quickly repaired.">
-                <source src="./assets/videos/TBC_Unit2.webm" type="video/webm">
-              </video>
+              <div class="content-video">
+                <video id="video-TBC-Unit2" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of the blue corner art logo being griefed and quickly repaired.">
+                  <source src="./assets/videos/TBC_Unit2.webm" type="video/webm">
+                </video>
+                <div class="video-shade"></div>
+                <a href="#" class="video-button" role="button" aria-label="Pause the video using the 'space' or 'tab' keys." aria-controls="video-TBC-Unit2">⏸</a>
+              </div>
               <div class="content-flavor">
                 <h3>Unit 2 (Logo Knights)</h3>
                 <p>
@@ -258,17 +270,25 @@
                   As the border spans a giant area, it requires diligence in observing different regions of the border to ensure they are intact.
                 </p>
               </div>
-              <video class="content-image" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of a pixel heart being drawn at the border between the blue corner's art and their neighbors art.">
-                <source src="./assets/videos/TBC_Unit3.webm" type="video/webm">
-              </video>
+              <div class="content-video">
+                <video id="video-TBC-Unit3" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of a pixel heart being drawn at the border between the blue corner's art and their neighbors art.">
+                  <source src="./assets/videos/TBC_Unit3.webm" type="video/webm">
+                </video>
+                <div class="video-shade"></div>
+                <a href="#" class="video-button" role="button" aria-label="Pause the video using the 'space' or 'tab' keys." aria-controls="video-TBC-Unit3">⏸</a>
+              </div>
               <!-- End of Unit 3-->
             </div>
 
             <!-- Unit 4 -->
             <div class="content-image-left">
-              <video class="content-image" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of a bunch of blue astronaut art being replaced with a vast expanse of solid blue.">
-                <source src="./assets/videos/TBC_Unit4.webm" type="video/webm">
-              </video>
+              <div class="content-video">
+                <video id="video-TBC-Unit4" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of a bunch of blue astronaut art being replaced with a vast expanse of solid blue.">
+                  <source src="./assets/videos/TBC_Unit4.webm" type="video/webm">
+                </video>
+                <div class="video-shade"></div>
+                <a href="#" class="video-button" role="button" aria-label="Pause the video using the 'space' or 'tab' keys." aria-controls="video-TBC-Unit4">⏸</a>
+              </div>
               <div class="content-flavor">
                 <h3>Unit 4 (Knights of the Field)</h3>
                 <p>
@@ -299,5 +319,6 @@
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
     <script src="./js/scrollCustom.js" defer></script>
+    <script src="./js/videoButton.js" defer></script>
   </body>
 </html>

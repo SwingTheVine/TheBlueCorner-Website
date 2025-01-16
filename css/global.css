@@ -17,6 +17,7 @@ html {
   padding-top: 4px;
   padding-left: 10px;
   padding-right: 10px;
+  z-index: 999;
 }
 
 /* Navbar logo */
@@ -52,7 +53,8 @@ html {
 /* Website buttons */
 .content-button,
 .navbar-button,
-.screen-reader-bypass {
+.screen-reader-bypass,
+.video-button {
   display: inline-block;
   color: #000000;
   border-width: 0px;
@@ -75,14 +77,16 @@ html {
 /* Website buttons mouse-over*/
 .content-button:hover,
 .navbar-button:hover,
-.screen-reader-bypass:hover {
+.screen-reader-bypass:hover,
+.video-button:hover {
   background-color: #0c97ae;
 }
 
 /* Website buttons pressed*/
 .content-button:active,
 .navbar-button:active,
-.screen-reader-bypass:active {
+.screen-reader-bypass:active,
+.video-button:active {
   background-color: #11788d;
 }
 
@@ -117,6 +121,13 @@ h1 {
 h2 {
   font-size: 26px;
   font-weight: bold;
+}
+
+/* Videos and GIFs */
+video {
+  width: 100%;
+  border: solid;
+  border-width: 1px;
 }
 
 /* Content image (right) */
@@ -196,14 +207,16 @@ footer {
   margin: 16px;
 }
 
-/* */
+/* The little profile pictures */
 .profile-icons {
   border-radius: 50%;
 }
 
-/* Only display to screen-readers */
+/* Hides things from view (display) */
 .screen-reader-only,
-.screen-reader-bypass:not(:focus):not(:active) {
+.screen-reader-bypass:not(:focus):not(:active),
+.video-button,
+.video-shade {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -215,13 +228,55 @@ footer {
   clip-path: inset(50%);
 }
 
-/* Unhides the skip link */
-.screen-reader-bypass:focus {
+/* Unhides things from view (display) */
+.screen-reader-bypass:focus,
+.content-video:hover .video-button,
+.content-video:hover .video-shade,
+.content-video:focus-within .video-shade,
+.video-shade:hover,
+.video-button:focus { 
   position: absolute;
+  clip-path: none;    
+  overflow: visible;
+}
+
+/* Specific styling for skip link unhide */
+.screen-reader-bypass:focus {
   top: 100px;
   z-index: 999;
+}
+
+/* Content videos */
+.content-video {
+  position: relative;
+  display: block;
+  margin: auto;
+  margin-top: 48px;
+  width: 90%;
+}
+
+/* GIF/Video overlay shading */
+.video-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 99%;
+  width: 101%;
+  opacity: 0.5;
+  background-color: #727272;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* GIF/Video overlay play/pause button */
+.video-button {
   width: auto;
   height: auto;
-  clip-path: none;
-  overflow: visible;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: x-large;
+  padding: 0px 3px 0px 3px;
+  z-index: 2;
 }
