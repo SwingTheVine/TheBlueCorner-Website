@@ -13,32 +13,12 @@
 
 /* Header 2 */
 h2 {
-  font-size: 28px;
-  font-weight: bold;
   margin-top: 64px;
 }
 
-/* Header 3 */
-h3 {
-  font-size: 20px;
-  font-weight: bold;
+/* Headers 3, 4, and 5 */
+h3, h4, h5 {
   margin-top: 32px;
-}
-
-/* Header 4 */
-h4 {
-  font-size: 20px;
-  margin-top: 32px;
-  color: gray;
-  font-weight: normal;
-}
-
-/* Header 5 */
-h5 {
-  font-size: 1em;
-  margin-top: 32px;
-  color: gray;
-  font-weight: normal;
 }
 
 /* Grid for sidebar and page */
@@ -50,16 +30,11 @@ h5 {
 /* Sidebar grid */
 .sidebar {
   background-color: white;
-  margin-top: 100px;
-  margin-left: 25px;
-  margin-right: 25px;
-  padding-top: 16px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 16px;
+  margin: 100px 25px 0px 25px;
+  padding: 16px;
+  height: 500px;
   width: 200px;
   justify-self: right;
-  height: 500px;
   display: grid;
   grid-template-rows: auto;
   overflow: auto;
@@ -71,7 +46,8 @@ h5 {
 .sidebar-link-h3,
 .sidebar-link-h4,
 .sidebar-link-h5 {
-  margin-bottom: 4px;
+  width: 195px;
+  margin-bottom: 8px;
   font-weight: bold;
   text-decoration: none;
   color: black;
@@ -94,6 +70,7 @@ h5 {
 
 /* Sidebar link h2 specific */
 .sidebar-link-h2 {
+  width: 185px;
   padding-left: 10px;
 }
 
@@ -102,6 +79,7 @@ h5 {
 .sidebar-link-h4,
 .sidebar-link-h5 {
   color: gray;
+  width: 175px;
   padding-left: 20px;
 }
 
@@ -109,11 +87,13 @@ h5 {
 .sidebar-link-h4,
 .sidebar-link-h5 {
   font-weight: normal;
+  width: 165px;
   padding-left: 30px;
 }
 
 /* Sidebar link h5 specific */
 .sidebar-link-h5 {
+  width: 155px;
   padding-left: 40px;
 }
 

@@ -1,7 +1,7 @@
 /* Entire navbar */
 .navbar-grid {
   display: grid;
-  grid-template-columns: 75px 200px 1fr 400px;
+  grid-template-columns: 75px 250px 1fr 400px;
   background-color: #51E9F4;
   align-items: center;
   position: fixed;
@@ -52,7 +52,6 @@
   border-width: 0px;
   border-radius: 16px;
   padding: 6px 12px 6px 12px;
-  font-family: Arial;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
@@ -124,7 +123,15 @@
 /* Entire page */
 html {
   background-color: #2450a4;
-  font-family: Roboto, Arial;
+
+  /* Font stack is as follows:
+   * Highest Priority (Roboto Mono)
+   * Windows fallback (Courier New)
+   * macOS fallback (Monaco)
+   * Linux fallback (DejaVu Sans Mono)
+   * Any possible monospace font (monospace)
+   * Last resort (Arial) */
+  font-family: 'Roboto Mono', 'Courier New', 'Monaco', 'DejaVu Sans Mono', monospace, 'Arial';
 }
 
 /* Any anchor with child image */
@@ -272,11 +279,6 @@ footer a:hover .footer-icon, footer a:focus .footer-icon {
   text-decoration: underline solid;
 }
 
-/* The little profile pictures */
-.profile-icons {
-  border-radius: 50%;
-}
-
 /* Hides things from view (display) */
 .screen-reader-only,
 .screen-reader-bypass:not(:focus):not(:active),
@@ -356,6 +358,16 @@ footer a:hover .footer-icon, footer a:focus .footer-icon {
   text-align: center;
   margin-top: 50px;
   padding: 5px 5px 5px 5px;
+}
+
+/* The little profile pictures */
+.profile-icon {
+  border-radius: 50%;
+}
+
+/* All <span> parents that have an <img> child with the "profile-icon" class */
+span:has(img.profile-icon) {
+  white-space: nowrap;
 }
 
 /* Used to shake icons when hovered/focused */

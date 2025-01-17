@@ -62,6 +62,6 @@ const name_regex = new RegExp('(?![^<]*>|[^<>]*<\/)(' + names.join('|') + ')', '
 paragraph.forEach(container => {
   // Replace the name with the pfp + name
   container.innerHTML = container.innerHTML.replace(name_regex, name => {
-    return '<img class="profile-icons" src="./assets/icons/pfp/' + name + '_Icon.webp" height="16" alt="">' + name;
+    return '<span><img class="profile-icon" src="./assets/icons/pfp/' + name + '_Icon.webp" height="16" alt="">' + name + '</span>';
   });
 });
