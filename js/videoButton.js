@@ -20,41 +20,35 @@ function triggerButton(button) {
   // (which must match the video's ID)
   const videoId = button.getAttribute('aria-controls');
   const video = document.getElementById(videoId);
+  var videoState = 'Play'; // Pause or Play
 
   // If the video is paused...
   if (video.paused) {
     video.play(); // Play the video
-
-    // Kills all children
-    button.innerHTML = '';
-
-    // Creates a new child
-    var pauseIcon = document.createElement('img');
-    pauseIcon.className = 'video-button-image';
-    pauseIcon.src = './assets/icons/FontAwesome_Circle-Pause.svg';
-    pauseIcon.setAttribute('aria-label', ''); // Sets img as decorative
-    button.appendChild(pauseIcon);
-    
-    // Updates the ARIA values
-    button.setAttribute('aria-label', "Pause the video.");
-    button.setAttribute('aria-details', "You can pause the video using the 'space' or 'tab' keys.");
+    videoState = 'Pause'; // Change video state
   } else {
     // ...the video is playing
 
     video.pause(); // Pause the video
-    
-    // Kills all children
-    button.innerHTML = '';
-
-    // Creates a new child
-    var playIcon = document.createElement('img');
-    playIcon.className = 'video-button-image';
-    playIcon.src = './assets/icons/FontAwesome_Circle-Play.svg';
-    playIcon.setAttribute('aria-label', ''); // Sets img as decorative
-    button.appendChild(playIcon);
-    
-    // Updates the ARIA values
-    button.setAttribute('aria-label', "Play the video.");
-    button.setAttribute('aria-details', "You can play the video using the 'space' or 'tab' keys.");
   }
+
+  // Kills all children
+  button.innerHTML = '';
+
+  // Creates <img> pause icon child
+  const pauseIcon = document.createElement('img');
+  pauseIcon.className = 'video-button-image';
+  pauseIcon.src = './assets/icons/FontAwesome_Circle-' + videoState +'.svg';
+  pauseIcon.alt = '';
+  button.appendChild(pauseIcon);
+  
+  // Creates <div> ARIA help child
+  const buttonARIA = document.createElement('div');
+  buttonARIA.id = button.getAttribute('aria-describedby'); // Id matches button ARIA "pointer"
+  buttonARIA.className = 'screen-reader-only';
+  buttonARIA.textContent = 'You can ' + videoState.toLowerCase() + ' the video using the "space" or "tab" keys.';
+  button.appendChild(buttonARIA);
+  
+  // Updates the ARIA values
+  button.setAttribute('aria-label', videoState + ' the video.');
 }
