@@ -1,3 +1,4 @@
+/* Content grid with image on left */
 .social-content-image-left {
   display: grid;
   grid-template-columns: 100px 1fr;
@@ -8,18 +9,37 @@
     background-color 0.25s;
 }
 
+/* Targets all children elements with "social-content-image" class
+that are a parent of any element with "social-content-image-left" */
+.social-content-image-left .social-content-image {
+  display: block;
+  transition:
+    transform 0.2s;
+}
+
+/* Targets all children elements with "social-content-image" class
+that are a parent of any element with "social-content-image-left"
+BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
+.social-content-image-left:hover .social-content-image {
+  animation: shake 0.5s;
+}
+
+/* Left content grid highlight when hovered/focused */
 .social-content-image-left:hover {
   background: lightgray;
 }
 
+/* Social media description */
 .social-content-flavor {
   display: grid;
   grid-template-rows: 32px 20px 1fr;
   margin-left: 32px;
 }
 
+/* Social media name/channel on specific platform */
 .social-subname {
   margin-top: 0px;
   font-size: 16px;
   font-weight: bold;
 }
+

@@ -28,9 +28,9 @@
   text-decoration: none;
 }
 
-/* Navbar title mouse-over */
-.navbar-title:hover {
-  text-decoration: underline;
+/* Navbar title hover/focus */
+.navbar-title:hover, .navbar-title:focus {
+  text-decoration: underline solid;
 }
 
 /* Navbar flexbox for buttons */
@@ -65,17 +65,14 @@
 }
 
 /* Website buttons mouse-over & focus */
-.content-button:hover,
-.navbar-button:hover,
-.screen-reader-bypass:hover,
-.content-button:focus,
-.navbar-button:focus,
-.screen-reader-bypass:focus {
+.content-button:hover, .content-button:focus,
+.navbar-button:hover, .navbar-button:focus,
+.screen-reader-bypass:hover, .screen-reader-bypass:focus {
   background-color: #0c97ae;
   border-bottom-right-radius: 0%;
 }
 
-/* Website button mouse-over (without border change) */
+/* Video button mouse-over (without border change) */
 .video-button:hover {
   background-color: #0c97ae;
 }
@@ -130,8 +127,7 @@ html {
   font-family: Roboto, Arial;
 }
 
-/* Any anchor with child button */
-a:has(button),
+/* Any anchor with child image */
 a:has(img) {
   text-decoration: none;
 }
@@ -153,8 +149,28 @@ h1 {
 
 /* Content subheader */
 h2 {
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
+}
+
+/* Header 3 */
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Header 4 */
+h4 {
+  font-size: 20px;
+  color: gray;
+  font-weight: normal;
+}
+
+/* Header 5 */
+h5 {
+  font-size: 1em;
+  color: gray;
+  font-weight: normal;
 }
 
 /* Videos and GIFs */
@@ -183,6 +199,21 @@ p {
   margin-inline-start: 0;
   margin-inline-end: 0;
   margin-top: 14px;
+}
+
+/* Ordered List */
+ol {
+  padding-left: 50px;
+}
+
+/* List Item */
+li {
+  padding-left: 5px;
+}
+
+/* Removes the marker for the list items. i.e. "*" */
+.no-marker li {
+  display: block;
 }
 
 /* Main body formatting */
@@ -221,6 +252,24 @@ footer {
 .footer-icon {
   height: 32px;
   margin: 16px;
+  transition:
+    transform 0.2s;
+}
+
+/* Shakes the footer icon when hover/focused */
+.footer-icon:hover, .footer-icon:focus
+footer a:hover .footer-icon, footer a:focus .footer-icon {
+  animation: shake 0.5s;
+}
+
+/* Any plain-text link */
+.link {
+  text-decoration: underline dotted;
+}
+
+/* Any plain-text link (hover/focused) */
+.link:hover, .link:focus {
+  text-decoration: underline solid;
 }
 
 /* The little profile pictures */
@@ -246,11 +295,8 @@ footer {
 
 /* Unhides things from view (display) */
 .screen-reader-bypass:focus,
-.content-video:hover .video-button,
-.content-video:hover .video-shade,
-.content-video:focus-within .video-shade,
-.video-shade:hover,
-.video-button:focus { 
+.content-video:hover .video-button, .video-button:focus,
+.content-video:hover .video-shade, .content-video:focus-within .video-shade, .video-shade:hover { 
   position: absolute;
   clip-path: none;    
   overflow: visible;
@@ -311,3 +357,13 @@ footer {
   margin-top: 50px;
   padding: 5px 5px 5px 5px;
 }
+
+/* Used to shake icons when hovered/focused */
+@keyframes shake {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(5deg);}
+  50% { transform: rotate(-5deg);}
+  75% { transform: rotate(5deg);}
+  100% { transform: rotate(0deg);}
+}
+

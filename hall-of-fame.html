@@ -6,7 +6,7 @@
 
     <!-- Tab and SEO metadata -->
     <link rel="icon" href="./assets/icons/TBC_Favicon.webp">
-    <title>The Blue Corner - Hall Of Fame</title>
+    <title>Hall Of Fame &mdash; The Blue Corner</title>
     <meta name="description" content="The Blue Corner Hall of Fame.  We are a community centered around Reddit r/place events. Check out our honored members!">
 
     <!-- Website CSS file -->
@@ -16,15 +16,15 @@
     <!-- Website fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript>
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    </noscript>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
   </head>
   <body>
 
+    <!-- The Skip Link -->
+    <a class="screen-reader-bypass" role="link" tabindex="0" onclick="scrollToClass('page', event)" onkeydown="scrollToClass('page', event)">Skip to page content</a>
+
     <!-- The Navigation Bar -->
-    <nav id="navbar"></nav>
+    <nav id="navbar" role="banner"></nav>
 
     <!-- All of the page -->
     <div class="page">
@@ -98,7 +98,7 @@
               <p>
                 This person is an archivist.
                 While a member of Congress, they also founded our historical records, the "Blue Corner History Archive."
-                Check out the <a href="https://www.reddit.com/r/TheBlueCorner/wiki/historyarchives/" target="_blank">Blue Corner History Archive</a>.
+                Check out the <a class="link" href="https://www.reddit.com/r/TheBlueCorner/wiki/historyarchives/" target="_blank">Blue Corner History Archive</a>.
               </p>
             </div>
             <!-- End of 9kz7 -->
@@ -168,7 +168,7 @@
                 If you like this website, consider donating!
               </p>
               <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-              <script type='text/javascript'>
+              <script type='text/javascript' defer>
                 kofiwidget2.init('Support the website on Ko-fi', '#0bbdcf', 'P5P1TW1PB');
                 kofiwidget2.draw();
               </script> 
@@ -258,5 +258,7 @@
     <script src="./js/insertNavbar.js" async></script>
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
+    <script src="./js/scrollHandler.js" defer></script>
+    <script src="./js/accessibilityHandler.js" defer></script>
   </body>
 </html>

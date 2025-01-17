@@ -41,21 +41,6 @@ h5 {
   font-weight: normal;
 }
 
-/* Ordered List */
-ol {
-  padding-left: 50px;
-}
-
-/* List Item */
-li {
-  padding-left: 5px;
-}
-
-/* Removes the marker for the list items. i.e. "*" */
-.no-marker li {
-  display: block;
-}
-
 /* Grid for sidebar and page */
 .sidebar-and-page {
   display: grid;
