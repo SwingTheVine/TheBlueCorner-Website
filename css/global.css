@@ -164,6 +164,18 @@ video {
   border-width: 1px;
 }
 
+/* Quote text */
+blockquote {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 32px;
+  color: gray;
+  width: 75%;
+}
+
 /* Content paragraph */
 p {
   margin-block-start: 0;
