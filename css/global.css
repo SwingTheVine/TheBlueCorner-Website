@@ -5,12 +5,10 @@
   background-color: #51E9F4;
   align-items: center;
   position: fixed;
-  top: 0px;
-  left: 0px;
+  top: 0%;
+  left: 0%;
   width: 100%;
-  padding-top: 4px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 4px 10px 0px 10px;
   z-index: 999;
 }
 
@@ -50,13 +48,10 @@
 .screen-reader-bypass,
 .video-button {
   display: inline-block;
-  color: #000000;
+  color: black;
   border-width: 0px;
   border-radius: 16px;
-  padding-top: 6px;
-  padding-left: 12px;
-  padding-bottom: 6px;
-  padding-right: 12px;
+  padding: 6px 12px 6px 12px;
   font-family: Arial;
   font-size: 18px;
   font-weight: bold;
@@ -65,13 +60,22 @@
   text-decoration: none;
   text-align: center;
   transition:
-    background-color 0.15s;
+    background-color 0.15s,
+    border-radius 0.15s;
 }
 
-/* Website buttons mouse-over*/
+/* Website buttons mouse-over & focus */
 .content-button:hover,
 .navbar-button:hover,
 .screen-reader-bypass:hover,
+.content-button:focus,
+.navbar-button:focus,
+.screen-reader-bypass:focus {
+  background-color: #0c97ae;
+  border-bottom-right-radius: 0%;
+}
+
+/* Website button mouse-over (without border change) */
 .video-button:hover {
   background-color: #0c97ae;
 }
