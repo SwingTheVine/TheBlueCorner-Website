@@ -86,22 +86,25 @@ li {
 .sidebar-link-h3,
 .sidebar-link-h4,
 .sidebar-link-h5 {
-  padding-top: 2px;
-  padding-bottom: 2px;
   margin-bottom: 4px;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
+  border: 2px solid white;
   transition:
-    background-color 0.25s;
+    background-color 0.25s,
+    border 0.25s;
 }
 
-/* Sidebar styling shared between all links when mouse-over */
-.sidebar-link-h1:hover,
-.sidebar-link-h2:hover,
-.sidebar-link-h3:hover,
-.sidebar-link-h4:hover,
-.sidebar-link-h5:hover {
+/* Sidebar styling shared between all links when mouse-over or focused */
+.sidebar-link-h1:hover, .sidebar-link-h1:focus,
+.sidebar-link-h2:hover, .sidebar-link-h2:focus,
+.sidebar-link-h3:hover, .sidebar-link-h3:focus,
+.sidebar-link-h4:hover, .sidebar-link-h4:focus,
+.sidebar-link-h5:hover, .sidebar-link-h5:focus {
   background-color: lightgray;
   cursor: pointer;
+  border: 2px solid black;
 }
 
 /* Sidebar link h2 specific */

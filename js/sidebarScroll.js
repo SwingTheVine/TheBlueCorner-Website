@@ -9,3 +9,4 @@ window.addEventListener('scroll', function() {
     sidebar.style.marginTop = (window.scrollY + 100) + 'px'; // Updates the sidebar Y position so it appears to stay on the same spot on the screen
   }
 });
+

@@ -20,7 +20,7 @@
   <body>
 
     <!-- The Skip Link -->
-    <a class="screen-reader-bypass" role="button" onclick="scrollToClass('page')" tabindex="0" href="#page">Skip to page content</a>
+    <a class="screen-reader-bypass" role="link" tabindex="0" onclick="scrollToClass('page', event)" onkeydown="scrollToClass('page', event)">Skip to page content</a>
 
     <!-- The Navigation Bar -->
     <div id="navbar" role="banner"></div>
@@ -91,9 +91,9 @@
               Your browser does not support this video.
             </video>
             <div class="video-shade"></div>
-            <a href="#" class="video-button" role="button" aria-label="Pause Button" aria-describedby="video-TBC-aria" aria-controls="video-TBC">
+            <a id="video-TBC-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-aria" aria-controls="video-TBC" onclick="triggerVideo('video-TBC-button', event)" onkeydown="triggerVideo('video-TBC-button', event)">
               <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause.svg" alt="">
-              <div id="video-TBC-aria" class="screen-reader-only">You can pause the video using the "space" or "tab" keys.</div>
+              <div id="video-TBC-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
             </a>
             <!-- End of video -->
           </div>
@@ -242,9 +242,9 @@
                   Your browser does not support this video.
                 </video>
                 <div class="video-shade"></div>
-                <a href="#" class="video-button" role="button" aria-label="Pause Button" aria-describedby="video-TBC-Unit1-aria" aria-controls="video-TBC-Unit1">
+                <a id="video-TBC-Unit1-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit1-aria" aria-controls="video-TBC-Unit1" onclick="triggerVideo('video-TBC-Unit1-button', event)" onkeydown="triggerVideo('video-TBC-Unit1-button', event)">
                   <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause.svg" alt="">
-                  <div id="video-TBC-Unit1-aria" class="screen-reader-only">You can pause the video using the "space" or "tab" keys.</div>
+                  <div id="video-TBC-Unit1-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
                 </a>
                 <!-- End of video -->
               </div>
@@ -260,9 +260,9 @@
                   Your browser does not support this video.
                 </video>
                 <div class="video-shade"></div>
-                <a href="#" class="video-button" role="button" aria-label="Pause Button" aria-describedby="video-TBC-Unit2-aria" aria-controls="video-TBC-Unit2">
+                <a id="video-TBC-Unit2-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit2-aria" aria-controls="video-TBC-Unit2" onclick="triggerVideo('video-TBC-Unit2-button', event)" onkeydown="triggerVideo('video-TBC-Unit2-button', event)">
                   <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause.svg" alt="">
-                  <div id="video-TBC-Unit2-aria" class="screen-reader-only">You can pause the video using the "space" or "tab" keys.</div>
+                  <div id="video-TBC-Unit2-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
                 </a>
                 <!-- End of video -->
               </div>
@@ -303,9 +303,9 @@
                   Your browser does not support this video.
                 </video>
                 <div class="video-shade"></div>
-                <a href="#" class="video-button" role="button" aria-label="Pause Button" aria-describedby="video-TBC-Unit3-aria" aria-controls="video-TBC-Unit3">
+                <a id="video-TBC-Unit3-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit3-aria" aria-controls="video-TBC-Unit3" onclick="triggerVideo('video-TBC-Unit3-button', event)" onkeydown="triggerVideo('video-TBC-Unit3-button', event)">
                   <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause.svg" alt="">
-                  <div id="video-TBC-Unit3-aria" class="screen-reader-only">You can pause the video using the "space" or "tab" keys.</div>
+                  <div id="video-TBC-Unit3-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
                 </a>
                 <!-- End of video -->
               </div>
@@ -321,9 +321,9 @@
                   Your browser does not support this video.
                 </video>
                 <div class="video-shade"></div>
-                <a href="#" class="video-button" role="button" aria-label="Pause Button" aria-describedby="video-TBC-Unit4-aria" aria-controls="video-TBC-Unit4">
+                <a id="video-TBC-Unit4-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit4-aria" aria-controls="video-TBC-Unit4" onclick="triggerVideo('video-TBC-Unit4-button', event)" onkeydown="triggerVideo('video-TBC-Unit4-button', event)">
                   <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause.svg" alt="">
-                  <div id="video-TBC-Unit4-aria" class="screen-reader-only">You can pause the video using the "space" or "tab" keys.</div>
+                  <div id="video-TBC-Unit4-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
                 </a>
               </div>
               <div class="content-flavor">
@@ -355,7 +355,7 @@
     <script src="./js/insertNavbar.js" async></script>
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
-    <script src="./js/scrollCustom.js" defer></script>
-    <script src="./js/videoButton.js" defer></script>
+    <script src="./js/scrollHandler.js" defer></script>
+    <script src="./js/accessibilityHandler.js" defer></script>
   </body>
 </html>
