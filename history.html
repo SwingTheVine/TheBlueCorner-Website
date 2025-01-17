@@ -21,7 +21,7 @@
   <body>
 
     <!-- The Skip Link -->
-    <a class="screen-reader-bypass" role="link" onclick="scrollToClass('page')" tabindex="0" href="#page">Skip to page content</a>
+    <a class="screen-reader-bypass" role="link" tabindex="0" onclick="scrollToClass('page', event)" onkeydown="scrollToClass('page', event)">Skip to page content</a>
 
     <!-- The Navigation Bar -->
     <nav id="navbar" role="banner"></nav>
@@ -31,110 +31,111 @@
 
       <!-- Sidebar -->
       <div class="sidebar" id="sidebar" role="navigation">  
-        <a class="screen-reader-bypass" role="link" tabindex="0" onclick="focusToId('sidebar-bottom')" onkeydown="focusToId('sidebar-bottom', event)">Skip to bottom of sidebar</a>
-        <a id="sidebar-top" class="sidebar-link-h1" role="link" href="#" tabindex="0" role="link" href="#" tabindex="0" onclick="scrollToId('top')">Our History</a>
-        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('history-titlepage')">Title Page</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('history-introduction')">Introduction</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('r-place-2017')">r/place 2017 (31st March-4th April 2017)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-faction-dominated-era')">The Faction Dominated Era</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-fall-of-the-blue-empire')">The Fall of the Blue Empire and the Reconquest of the Corner</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-legacy-of-the-2017-blue-corner')">The Legacy of the 2017 Blue Corner</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('the-first-inter-place-period')">The First Inter-Place Period (4th of April 2017-31st March 2022)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('r-blupxls')">r/Blupxls (Canvas 1-4)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('r-thebluecorner')">r/TheBlueCorner (Canvas 5-10?)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('ocean')">Ocean (Canvas 16-27)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-blue-empire')">The Blue Empire (Canvas 28, 30-30a,37,62)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('blue-corner')">Blue Corner (Canvas 39-40)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('pxls-space-overview')">The Blue Corner on Pxls Space Overview</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('r-place-2022')">r/place 2022 (1st-5th April 2022)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-countdown')">The Countdown</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-first-corner-2022')">The First Corner (1k,1k) in the original canvas, the Old World.</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-lattice-wars')">The Lattice Wars</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-qrmongus-war')">The QRMongus war</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-corner-2022')">The Second Corner(2k,1k) In the First Expansion, The New World</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-tarik-raid')">The Tarik Raid</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-knights-of-the-true-corner')">The Knights of the True Corner</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('azure-angle-incident')">Azure Angle Incident</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('xqc-invasion')">xQc invasion</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-balkanization')">The Balkanization of the Blue Corner</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('new-blue-logo')">New Blue Logo</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('sixth-lattice-war')">Sixth Lattice War (Fourth Lattice War)</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('third-amongus-war')">Third Amongus War (Second Amongus War)</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-green-line-invasion')">The Green Line Invasion</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-5opka-invasion')">The 5opka Invasion</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-aftermath-of-5opka')">The Aftermath of the 5opka invasion (near 1k,2k)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-third-corner-2022')">The Third Corner (2k,2k) in The Second Expansion, the Underground.</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('early-expansion')">Early Expansion and Our Neighbors</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('r-americanflaginplace')">r/AmericanFlagInPlace</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('bratishkinoff')">Bratishkinoff (Frog Guy)</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-blue-corners-design')">The Blue Corner&#x2019;s design</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('other-allies')">Other allies</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('first-bratishkinoff-war')">First Bratishkinoff War</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('second-blue-corner-civil-war')">Second Blue Corner Civil War?</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('fourth-amongus-war')">Fourth Amongus War (Third Amongus War)</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-four-unit-system')">The Four Unit System</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('second-bratishkinoff-war')">Second Bratishkinoff War</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('three-final-battles')">Three Final Battles</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('third-blue-corner-civil-war')">Third Blue Corner (Incorporationist) Civil War</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-whiteout')">The Whiteout</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-legacy-of-the-2022-blue-corner')">The Legacy of the 2022 Blue Corner</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-inter-place-period')">The Second Inter-Place Period (4th April 2022-20th July 2023)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('our-place')">Our/Place, ludwig&#x2019;s canvas</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('pxls-space')">Pxls.Space</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-place-invasion-revival')">The Place Invasion Revival (Canvas 55-?)</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-knights-of-the-blue-corner')">The Knights of the Blue Corner (Canvas 63-present)</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('canvas-63')">Canvas 63</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-pokepxls-war')">The Pokepxls War</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-orange-square')">The Orange Square</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-knights-of-the-blue-corner-in-general')">The Knights of the Blue Corner in general</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('canvas-66')">Canvas 66, our most successful canvas</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('canvas-67')">Canvas 67, when I left</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('canvas-68')">Canvas 68</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-blue-corner-on-pxls-space')">The Blue Corner on Pxls.Space</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('our-place-2')">our/place 2</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('r-place-2023')">r/place 2023</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('return-of-place-too-quickly')">Return Of Place Too Quickly (No Place)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-new-first-corner')">The New First Corner (500,500) in the original canvas</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-azure-era-begins')">The Azure Era Begins</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-corner-2023')">The Second Corner (1000,500) in the first expansion</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-shameful-deal')">The Second Shameful Deal</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('controlling-the-french')">Controlling the French hivemind</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('shitter-griefs')">Shitter Griefs</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('failed-logo-building')">Failed Logo Building</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-messenger-initiative')">The Messenger Initiative Begins</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-great-color-change')">The Great Color Change</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-mod-election')">The Mod Election</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-prank-by-felps')">The Prank by Felps</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-first-great-overflow')">The First Great Overflow</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-fall-of-france')">The Fall of France and the Great Bot Invasion</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-great-overflow')">The Second Great Overflow</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('war-with-mixigaming')">War with MixiGaming</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-red-pixel-invasion')">The Red Pixel invasion of the Memorial Corner</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-third-corner-2023')">The Third Corner (1000,1000) in the fourth expansion</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-memorial-corner-heart-era')">The Memorial Corner Heart Era</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-zugu-cornerian-war-begins')">The Zugu-Cornerian War Begins</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('first-zugu-invasion')">First Zugu Invasion and the False Corner</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('second-zugu-invasion')">Second Zugu Invasion and the Hiring of Bratishkinoff</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('zugu-community-invasions')">Zugu Community Invasions (3 and 4)</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('the-discord-raid')">The Discord Raid</a>
-        <a class="sidebar-link-h4" role="link" href="#" tabindex="0" onclick="scrollToId('chuck-the-blue-corner-streamer')">Chuck: The Blue Corner Streamer</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-fourth-corner-2023')">The Fourth Corner (1500,1000) in the sixth expansion</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-zugu-cornerian-war-continues')">The Zugu-Cornerian War Continues</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-bot-invasion')">The Second Bot Invasion (the Fake Taskbar and Bratishkinoff&#x2019;s Gifts)</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-second-memorial-heart')">The Second Memorial Heart</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-final-battle')">The Final Battle (Of the Zugu War)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('forever-ending-soon')">Forever Ending Soon: The Final Drama</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-void-viet-bot-war')">The Void Viet-bot war</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-great-bot-invasion')">The Great Bot Invasion of r/place</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-community-whiteout')">The Community Whiteout</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('greyplace')">Grayplace</a>
-        <a class="sidebar-link-h3" role="link" href="#" tabindex="0" onclick="scrollToId('the-admins-whiteout')">The Admin&#x2019;s Whiteout</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('the-legacy-of-the-2023-blue-corner')">The Legacy of the 2023 Blue Corner</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('the-final-pixel')">The Final Pixel</a>
-        <a class="sidebar-link-h1" role="link" href="#" tabindex="0" onclick="scrollToId('the-appendices')">The Appendices</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('mod-team-2023')">Mod Team (2023)</a>
-        <a class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('other-notable-members-2023')">Other notable members:</a>
-        <a id="sidebar-bottom" class="sidebar-link-h2" role="link" href="#" tabindex="0" onclick="scrollToId('alliances-2023')">Alliances (2023)</a>
+        <a class="screen-reader-bypass" role="button" tabindex="0" onclick="focusToId('sidebar-bottom', event)" onkeydown="focusToId('sidebar-bottom', event)">Skip to bottom of sidebar</a>
+        <a id="sidebar-top" class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('top', event)" onkeydown="scrollToId('top', event)">Our History</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('history-titlepage', event)" onkeydown="scrollToId('history-titlepage', event)">Title Page</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('history-introduction', event)" onkeydown="scrollToId('history-introduction', event)">Introduction</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('r-place-2017', event)" onkeydown="scrollToId('r-place-2017', event)">r/place 2017 (31st March-4th April 2017)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-faction-dominated-era', event)" onkeydown="scrollToId('the-faction-dominated-era', event)">The Faction Dominated Era</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-fall-of-the-blue-empire', event)" onkeydown="scrollToId('the-fall-of-the-blue-empire', event)">The Fall of the Blue Empire and the Reconquest of the Corner</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-legacy-of-the-2017-blue-corner', event)" onkeydown="scrollToId('the-legacy-of-the-2017-blue-corner', event)">The Legacy of the 2017 Blue Corner</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('the-first-inter-place-period', event)" onkeydown="scrollToId('the-first-inter-place-period', event)">The First Inter-Place Period (4th of April 2017-31st March 2022)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('r-blupxls', event)" onkeydown="scrollToId('r-blupxls', event)">r/Blupxls (Canvas 1-4)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('r-thebluecorner', event)" onkeydown="scrollToId('r-thebluecorner', event)">r/TheBlueCorner (Canvas 5-10?)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('ocean', event)" onkeydown="scrollToId('ocean', event)">Ocean (Canvas 16-27)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-blue-empire', event)" onkeydown="scrollToId('the-blue-empire', event)">The Blue Empire (Canvas 28, 30-30a,37,62)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('blue-corner', event)" onkeydown="scrollToId('blue-corner', event)">Blue Corner (Canvas 39-40)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('pxls-space-overview', event)" onkeydown="scrollToId('pxls-space-overview', event)">The Blue Corner on Pxls Space Overview</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('r-place-2022', event)" onkeydown="scrollToId('r-place-2022', event)">r/place 2022 (1st-5th April 2022)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-countdown', event)" onkeydown="scrollToId('the-countdown', event)">The Countdown</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-first-corner-2022', event)" onkeydown="scrollToId('the-first-corner-2022', event)">The First Corner (1k,1k) in the original canvas, the Old World.</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-lattice-wars', event)" onkeydown="scrollToId('the-lattice-wars', event)">The Lattice Wars</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-qrmongus-war', event)" onkeydown="scrollToId('the-qrmongus-war', event)">The QRMongus war</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-second-corner-2022', event)" onkeydown="scrollToId('the-second-corner-2022', event)">The Second Corner(2k,1k) In the First Expansion, The New World</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-tarik-raid', event)" onkeydown="scrollToId('the-tarik-raid', event)">The Tarik Raid</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-knights-of-the-true-corner', event)" onkeydown="scrollToId('the-knights-of-the-true-corner', event)">The Knights of the True Corner</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('azure-angle-incident', event)" onkeydown="scrollToId('azure-angle-incident', event)">Azure Angle Incident</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('xqc-invasion', event)" onkeydown="scrollToId('xqc-invasion', event)">xQc invasion</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-balkanization', event)" onkeydown="scrollToId('the-balkanization', event)">The Balkanization of the Blue Corner</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('new-blue-logo', event)" onkeydown="scrollToId('new-blue-logo', event)">New Blue Logo</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('sixth-lattice-war', event)" onkeydown="scrollToId('sixth-lattice-war', event)">Sixth Lattice War (Fourth Lattice War)</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('third-amongus-war', event)" onkeydown="scrollToId('third-amongus-war', event)">Third Amongus War (Second Amongus War)</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-green-line-invasion', event)" onkeydown="scrollToId('the-green-line-invasion', event)">The Green Line Invasion</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-5opka-invasion', event)" onkeydown="scrollToId('the-5opka-invasion', event)">The 5opka Invasion</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-aftermath-of-5opka', event)" onkeydown="scrollToId('the-aftermath-of-5opka', event)">The Aftermath of the 5opka invasion (near 1k,2k)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-third-corner-2022', event)" onkeydown="scrollToId('the-third-corner-2022', event)">The Third Corner (2k,2k) in The Second Expansion, the Underground.</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('early-expansion', event)" onkeydown="scrollToId('early-expansion', event)">Early Expansion and Our Neighbors</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('r-americanflaginplace', event)" onkeydown="scrollToId('r-americanflaginplace', event)">r/AmericanFlagInPlace</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('bratishkinoff', event)" onkeydown="scrollToId('bratishkinoff', event)">Bratishkinoff (Frog Guy)</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-blue-corners-design', event)" onkeydown="scrollToId('the-blue-corners-design', event)">The Blue Corner&#x2019;s design</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('other-allies', event)" onkeydown="scrollToId('other-allies', event)">Other allies</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('first-bratishkinoff-war', event)" onkeydown="scrollToId('first-bratishkinoff-war', event)">First Bratishkinoff War</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('second-blue-corner-civil-war', event)" onkeydown="scrollToId('second-blue-corner-civil-war', event)">Second Blue Corner Civil War?</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('fourth-amongus-war', event)" onkeydown="scrollToId('fourth-amongus-war', event)">Fourth Amongus War (Third Amongus War)</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-four-unit-system', event)" onkeydown="scrollToId('the-four-unit-system', event)">The Four Unit System</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('second-bratishkinoff-war', event)" onkeydown="scrollToId('second-bratishkinoff-war', event)">Second Bratishkinoff War</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('three-final-battles', event)" onkeydown="scrollToId('three-final-battles', event)">Three Final Battles</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('third-blue-corner-civil-war', event)" onkeydown="scrollToId('third-blue-corner-civil-war', event)">Third Blue Corner (Incorporationist) Civil War</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-whiteout', event)" onkeydown="scrollToId('the-whiteout', event)">The Whiteout</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-legacy-of-the-2022-blue-corner', event)" onkeydown="scrollToId('the-legacy-of-the-2022-blue-corner', event)">The Legacy of the 2022 Blue Corner</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('the-second-inter-place-period', event)" onkeydown="scrollToId('the-second-inter-place-period', event)">The Second Inter-Place Period (4th April 2022-20th July 2023)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('our-place', event)" onkeydown="scrollToId('our-place', event)">Our/Place, ludwig&#x2019;s canvas</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('pxls-space', event)" onkeydown="scrollToId('pxls-space', event)">Pxls.Space</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-place-invasion-revival', event)" onkeydown="scrollToId('the-place-invasion-revival', event)">The Place Invasion Revival (Canvas 55-?)</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-knights-of-the-blue-corner', event)" onkeydown="scrollToId('the-knights-of-the-blue-corner', event)">The Knights of the Blue Corner (Canvas 63-present)</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('canvas-63', event)" onkeydown="scrollToId('canvas-63', event)">Canvas 63</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-pokepxls-war', event)" onkeydown="scrollToId('the-pokepxls-war', event)">The Pokepxls War</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-orange-square', event)" onkeydown="scrollToId('the-orange-square', event)">The Orange Square</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-knights-of-the-blue-corner-in-general', event)" onkeydown="scrollToId('the-knights-of-the-blue-corner-in-general', event)">The Knights of the Blue Corner in general</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('canvas-66', event)" onkeydown="scrollToId('canvas-66', event)">Canvas 66, our most successful canvas</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('canvas-67', event)" onkeydown="scrollToId('canvas-67', event)">Canvas 67, when I left</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('canvas-68', event)" onkeydown="scrollToId('canvas-68', event)">Canvas 68</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-blue-corner-on-pxls-space', event)" onkeydown="scrollToId('the-blue-corner-on-pxls-space', event)">The Blue Corner on Pxls.Space</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('our-place-2', event)" onkeydown="scrollToId('our-place-2', event)">our/place 2</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('r-place-2023', event)" onkeydown="scrollToId('r-place-2023', event)">r/place 2023</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('return-of-place-too-quickly', event)" onkeydown="scrollToId('return-of-place-too-quickly', event)">Return Of Place Too Quickly (No Place)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-new-first-corner', event)" onkeydown="scrollToId('the-new-first-corner', event)">The New First Corner (500,500) in the original canvas</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-azure-era-begins', event)" onkeydown="scrollToId('the-azure-era-begins', event)">The Azure Era Begins</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-second-corner-2023', event)" onkeydown="scrollToId('the-second-corner-2023', event)">The Second Corner (1000,500) in the first expansion</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-second-shameful-deal', event)" onkeydown="scrollToId('the-second-shameful-deal', event)">The Second Shameful Deal</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('controlling-the-french', event)" onkeydown="scrollToId('controlling-the-french', event)">Controlling the French hivemind</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('shitter-griefs', event)" onkeydown="scrollToId('shitter-griefs', event)">Shitter Griefs</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('failed-logo-building', event)" onkeydown="scrollToId('failed-logo-building', event)">Failed Logo Building</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-messenger-initiative', event)" onkeydown="scrollToId('the-messenger-initiative', event)">The Messenger Initiative Begins</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-great-color-change', event)" onkeydown="scrollToId('the-great-color-change', event)">The Great Color Change</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-mod-election', event)" onkeydown="scrollToId('the-mod-election', event)">The Mod Election</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-prank-by-felps', event)" onkeydown="scrollToId('the-prank-by-felps', event)">The Prank by Felps</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-first-great-overflow', event)" onkeydown="scrollToId('the-first-great-overflow', event)">The First Great Overflow</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-fall-of-france', event)" onkeydown="scrollToId('the-fall-of-france', event)">The Fall of France and the Great Bot Invasion</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-second-great-overflow', event)" onkeydown="scrollToId('the-second-great-overflow', event)">The Second Great Overflow</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('war-with-mixigaming', event)" onkeydown="scrollToId('war-with-mixigaming', event)">War with MixiGaming</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-red-pixel-invasion', event)" onkeydown="scrollToId('the-red-pixel-invasion', event)">The Red Pixel invasion of the Memorial Corner</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-third-corner-2023', event)" onkeydown="scrollToId('the-third-corner-2023', event)">The Third Corner (1000,1000) in the fourth expansion</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-memorial-corner-heart-era', event)" onkeydown="scrollToId('the-memorial-corner-heart-era', event)">The Memorial Corner Heart Era</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-zugu-cornerian-war-begins', event)" onkeydown="scrollToId('the-zugu-cornerian-war-begins', event)">The Zugu-Cornerian War Begins</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('first-zugu-invasion', event)" onkeydown="scrollToId('first-zugu-invasion', event)">First Zugu Invasion and the False Corner</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('second-zugu-invasion', event)" onkeydown="scrollToId('second-zugu-invasion', event)">Second Zugu Invasion and the Hiring of Bratishkinoff</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('zugu-community-invasions', event)" onkeydown="scrollToId('zugu-community-invasions', event)">Zugu Community Invasions (3 and 4)</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('the-discord-raid', event)" onkeydown="scrollToId('the-discord-raid', event)">The Discord Raid</a>
+        <a class="sidebar-link-h4" role="link" tabindex="0" onclick="scrollToId('chuck-the-blue-corner-streamer', event)" onkeydown="scrollToId('chuck-the-blue-corner-streamer', event)">Chuck: The Blue Corner Streamer</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-fourth-corner-2023', event)" onkeydown="scrollToId('the-fourth-corner-2023', event)">The Fourth Corner (1500,1000) in the sixth expansion</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-zugu-cornerian-war-continues', event)" onkeydown="scrollToId('the-zugu-cornerian-war-continues', event)">The Zugu-Cornerian War Continues</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-second-bot-invasion', event)" onkeydown="scrollToId('the-second-bot-invasion', event)">The Second Bot Invasion (the Fake Taskbar and Bratishkinoff&#x2019;s Gifts)</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-second-memorial-heart', event)" onkeydown="scrollToId('the-second-memorial-heart', event)">The Second Memorial Heart</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-final-battle', event)" onkeydown="scrollToId('the-final-battle', event)">The Final Battle (Of the Zugu War)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('forever-ending-soon', event)" onkeydown="scrollToId('forever-ending-soon', event)">Forever Ending Soon: The Final Drama</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-void-viet-bot-war', event)" onkeydown="scrollToId('the-void-viet-bot-war', event)">The Void Viet-bot war</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-great-bot-invasion', event)" onkeydown="scrollToId('the-great-bot-invasion', event)">The Great Bot Invasion of r/place</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-community-whiteout', event)" onkeydown="scrollToId('the-community-whiteout', event)">The Community Whiteout</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('greyplace', event)" onkeydown="scrollToId('greyplace', event)">Grayplace</a>
+        <a class="sidebar-link-h3" role="link" tabindex="0" onclick="scrollToId('the-admins-whiteout', event)" onkeydown="scrollToId('the-admins-whiteout', event)">The Admin&#x2019;s Whiteout</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('the-legacy-of-the-2023-blue-corner', event)" onkeydown="scrollToId('the-legacy-of-the-2023-blue-corner', event)">The Legacy of the 2023 Blue Corner</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('the-final-pixel', event)" onkeydown="scrollToId('the-final-pixel', event)">The Final Pixel</a>
+        <a class="sidebar-link-h1" role="link" tabindex="0" onclick="scrollToId('the-appendices', event)" onkeydown="scrollToId('the-appendices', event)">The Appendices</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('mod-team-2023', event)" onkeydown="scrollToId('mod-team-2023', event)">Mod Team (2023)</a>
+        <a class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('other-notable-members-2023', event)" onkeydown="scrollToId('other-notable-members-2023', event)">Other notable members:</a>
+        <a id="sidebar-bottom" class="sidebar-link-h2" role="link" tabindex="0" onclick="scrollToId('alliances-2023', event)" onkeydown="scrollToId('alliances-2023', event)">Alliances (2023)</a>
+        <a class="screen-reader-bypass" role="button" tabindex="0" onclick="focusToId('sidebar-top', event)" onkeydown="focusToId('sidebar-top', event)">Skip to top of sidebar</a>
         <!-- End of Sidebar -->
       </div>
 
@@ -2942,7 +2943,8 @@
     <script src="./js/insertNavbar.js" async></script>
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
-    <script src="./js/scrollCustom.js" defer></script>
+    <script src="./js/scrollHandler.js" defer></script>
+    <script src="./js/accessibilityHandler.js" defer></script>
     <script src="./js/sidebarScroll.js" defer></script>
   </body>
 </html>

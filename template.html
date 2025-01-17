@@ -20,7 +20,7 @@
   <body>
 
     <!-- The Skip Link -->
-    <a class="screen-reader-bypass" role="link" onclick="scrollToClass('page')" tabindex="0" href="#page">Skip to page content</a>
+    <a class="screen-reader-bypass" role="link" tabindex="0" onclick="scrollToClass('page', event)" onkeydown="scrollToClass('page', event)">Skip to page content</a>
 
     <!-- The Navigation Bar -->
     <nav id="navbar" role="banner"></nav>
@@ -60,6 +60,7 @@
     <script src="./js/insertNavbar.js" async></script>
     <script src="./js/insertFooter.js" async></script>
     <script src="./js/profilePicture.js" defer></script>
-    <script src="./js/scrollCustom.js" defer></script>
+    <script src="./js/scrollHandler.js" defer></script>
+    <script src="./js/accessibilityHandler.js" defer></script>
   </body>
 </html>
