@@ -3,8 +3,9 @@ function accessiblePress(event) {
   // If the event exists (undefined when mouse-click),
   // ...AND the key press strict equals "Enter",
   // ...OR the key press strict equals " ",
-  // ...OR the pointer id equals 1...
-  if(event && ((event.key === 'Enter') || (event.key === ' ') || (event.pointerId == 1))) {
+  // ...OR the pointer type is "mouse",
+  // ...OR the pointer type is "touch"...
+  if(event && ((event.key === 'Enter') || (event.key === ' ') || (event.pointerType === 'mouse') || (event.pointerType === 'touch'))) {
     // ...keyboard/mouse navigation activated the button/link.
     // We want to focus on the element
     

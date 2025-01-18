@@ -1,5 +1,6 @@
 // This scrolls and then focuses on an element with a specific class
 function scrollToId(idName, event) {
+  console.log(event);
 
   // If the user wants to activate the button/link...
   if(accessiblePress(event)) {
