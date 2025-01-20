@@ -446,6 +446,14 @@ span:has(img.profile-icon) {
   .navbar-button,
   .screen-reader-bypass,
   .video-button {
+    border: 2px solid ButtonText;
+  }
+
+  /* Makes website buttons highlighted */
+  .content-button:focus, .content-button:hover,
+  .navbar-button:focus, .navbar-button:hover,
+  .screen-reader-bypass:focus, .screen-reader-bypass:hover,
+  .video-button:focus, .video-button:hover {
     border: 2px solid Highlight;
   }
 }

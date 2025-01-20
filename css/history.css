@@ -115,7 +115,7 @@ h3, h4, h5 {
     color: #E7E7E7;
   }
 
-  /* Sidebar links hovered/active in dark mode */
+  /* Sidebar links hovered/focused in dark mode */
   .sidebar-link-h1:hover, .sidebar-link-h1:focus,
   .sidebar-link-h2:hover, .sidebar-link-h2:focus,
   .sidebar-link-h3:hover, .sidebar-link-h3:focus,
@@ -141,16 +141,24 @@ h3, h4, h5 {
 /* High contrast mode */
 @media (forced-colors: active) {
 
-  /* Makes sidebar links visible */
+  /* Makes sidebar links visible in high contrast mode */
   .sidebar-link-h1,
   .sidebar-link-h2,
   .sidebar-link-h3,
   .sidebar-link-h4,
   .sidebar-link-h5 {
-    border: 2px dashed Highlight;
+    border: 2px dashed ButtonText;
     transition:
-      background-color 0.1s,
       border 0.1s;
+  }
+
+  /* Sidebar links hovered/focused in high contrast mode */
+  .sidebar-link-h1:hover, .sidebar-link-h1:focus,
+  .sidebar-link-h2:hover, .sidebar-link-h2:focus,
+  .sidebar-link-h3:hover, .sidebar-link-h3:focus,
+  .sidebar-link-h4:hover, .sidebar-link-h4:focus,
+  .sidebar-link-h5:hover, .sidebar-link-h5:focus {
+    border: 2px solid HighLight;
   }
 }
 
