@@ -138,9 +138,23 @@ h3, h4, h5 {
   }
 }
 
-/*
-&#x2019;
+/* High contrast mode */
+@media (forced-colors: active) {
 
+  /* Makes sidebar links visible */
+  .sidebar-link-h1,
+  .sidebar-link-h2,
+  .sidebar-link-h3,
+  .sidebar-link-h4,
+  .sidebar-link-h5 {
+    border: 2px dashed Highlight;
+    transition:
+      background-color 0.1s,
+      border 0.1s;
+  }
+}
+
+/*
 "Cornerness, Blueness, and bottom-rightness are the three uncompromisable positions of the True Corner." - Scout107
 "STAY TRUE, STAY BLUE" - Nexiy
 "We all gaze up into the blue sky" - Nexiy

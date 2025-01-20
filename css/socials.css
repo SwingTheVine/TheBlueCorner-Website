@@ -56,3 +56,19 @@ BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
     background-color: #204279;
   }
 }
+
+/* High contrast mode */
+@media (forced-colors: active) {
+
+  /* Makes social links visible */
+  .social-content-image-left {
+    border: 2px dashed Highlight;
+    transition: 
+      border 0.1s;
+  }
+
+  /* Makes focus/hover on links noticeable */
+  .social-content-image-left:hover, a:focus .social-content-image-left {
+    border: 2px solid Highlight;
+  }
+}

@@ -437,3 +437,15 @@ span:has(img.profile-icon) {
     color: #BB81FF;
   }
 }
+
+/* High contrast mode */
+@media (forced-colors: active) {
+
+  /* Makes website buttons visible */
+  .content-button,
+  .navbar-button,
+  .screen-reader-bypass,
+  .video-button {
+    border: 2px solid Highlight;
+  }
+}
