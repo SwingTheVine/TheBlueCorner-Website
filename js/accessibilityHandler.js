@@ -44,12 +44,26 @@ function triggerVideo(buttonId, event) {
     // Kills all children
     button.innerHTML = '';
 
-    // Creates <img> pause icon child
+    // Creates the <picture> child
+    const picture = document.createElement('picture');
+    button.appendChild(picture);
+
+    // Creates the two <source> children
+    const sourceLight = document.createElement('source');
+    sourceLight.srcset = './assets/icons/FontAwesome_Circle-' + videoState + '_Light.svg';
+    sourceLight.media = '(prefers-color-scheme: light), (prefers-color-scheme: no-preference)';
+    const sourceDark = document.createElement('source');
+    sourceDark.srcset = './assets/icons/FontAwesome_Circle-' + videoState + '_Dark.svg';
+    sourceDark.media = '(prefers-color-scheme: dark)';
+    picture.appendChild(sourceLight);
+    picture.appendChild(sourceDark);
+
+    // Creates the <img> pause icon child
     const pauseIcon = document.createElement('img');
     pauseIcon.className = 'video-button-image';
-    pauseIcon.src = './assets/icons/FontAwesome_Circle-' + videoState +'.svg';
+    pauseIcon.src = './assets/icons/FontAwesome_Circle-' + videoState +'_Light.svg';
     pauseIcon.alt = '';
-    button.appendChild(pauseIcon);
+    picture.appendChild(pauseIcon);
     
     // Creates <div> ARIA help child
     const buttonARIA = document.createElement('div');
