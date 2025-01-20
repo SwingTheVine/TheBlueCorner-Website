@@ -39,7 +39,7 @@ BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
 /* Social media name/channel on specific platform */
 .social-subname {
   margin-top: 0px;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: bold;
 }
 
