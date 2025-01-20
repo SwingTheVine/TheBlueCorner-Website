@@ -21,3 +21,12 @@
   font-size: 14px;
   color: gray;
 }
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+
+  /* Famed peoples' roles */
+  .hof-roles {
+    color: #BABABA;
+  }
+}

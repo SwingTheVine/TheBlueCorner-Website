@@ -43,3 +43,16 @@ BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
   font-weight: bold;
 }
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+
+  /* Socials text */
+  .social-content-image-left {
+    color: #E7E7E7;
+  }
+
+  /* Currently hovered social background */
+  .social-content-image-left:hover {
+    background-color: #204279;
+  }
+}

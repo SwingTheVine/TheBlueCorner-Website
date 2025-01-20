@@ -97,6 +97,46 @@ h3, h4, h5 {
   padding-left: 40px;
 }
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+
+  /* Sidebar background in dark mode */
+  .sidebar {
+    background-color: #1A2D51;
+  }
+
+  /* Sidebar links in dark mode */
+  .sidebar-link-h1,
+  .sidebar-link-h2,
+  .sidebar-link-h3,
+  .sidebar-link-h4,
+  .sidebar-link-h5 {
+    border-color: #1A2D51;
+    color: #E7E7E7;
+  }
+
+  /* Sidebar links hovered/active in dark mode */
+  .sidebar-link-h1:hover, .sidebar-link-h1:focus,
+  .sidebar-link-h2:hover, .sidebar-link-h2:focus,
+  .sidebar-link-h3:hover, .sidebar-link-h3:focus,
+  .sidebar-link-h4:hover, .sidebar-link-h4:focus,
+  .sidebar-link-h5:hover, .sidebar-link-h5:focus {
+    border-color: #E7E7E7;
+    background-color: #204279;
+  }
+
+  /* Sidebar lower header colors in dark mode */
+  .sidebar-link-h3,
+  .sidebar-link-h4,
+  .sidebar-link-h5 {
+    color: #B0B0B0;
+  }
+
+  /* Document author color in dark mode */
+  .history-author {
+    color: #B0B0B0;
+  }
+}
 
 /*
 &#x2019;
@@ -105,6 +145,7 @@ h3, h4, h5 {
 "STAY TRUE, STAY BLUE" - Nexiy
 "We all gaze up into the blue sky" - Nexiy
 "Bot-less since 2017"
-"WCAG 2.2 AA compliant!"
+"WCAG A compliant!"
+"WCAG AA compliant!"
 "Approximately 1,724,450 pixels placed!"
 */

@@ -55,7 +55,7 @@
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
-  background: #0bbdcf;
+  background-color: #0bbdcf;
   text-decoration: none;
   text-align: center;
   transition:
@@ -379,3 +379,61 @@ span:has(img.profile-icon) {
   100% { transform: rotate(0deg);}
 }
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+
+  /* Main content background in dark mode */
+  main, footer {
+    background-color: #1A2D51;
+  }
+
+  /* Footer text in dark mode */
+  footer {
+    color: #BABABA;
+  }
+
+  /* Website background & default text in dark mode */
+  html {
+    background-color: #101C32;
+    color: #E7E7E7;
+  }
+
+  /* Block quotes in dark mode */
+  blockquote {
+    color: #B0B0B0;
+  }
+
+  /* Lower header colors in dark mode */
+  h4, h5 {
+    color: #B0B0B0;
+  }
+
+  /* Banner in dark mode */
+  .navbar-grid {
+    background-color: #234785;
+  }
+
+  /* Banner title in dark mode */
+  .navbar-title {
+    color: #E7E7E7;
+  }
+
+  /* Website buttons in dark mode */
+  .content-button,
+  .navbar-button,
+  .screen-reader-bypass,
+  .video-button {
+    background-color: #4A99ED;
+  }
+
+  /* Links (excluding buttons) in dark mode */
+  a:not(
+    .content-button, .navbar-button, .navbar-title, .screen-reader-bypass, .video-button, .sidebar a) {
+    color: #85A8ff;
+  }
+
+  /* Visted links (excluding buttons) in dark mode */
+  a:visited:not(.content-button, .navbar-button, .navbar-title, .screen-reader-bypass, .video-button, .sidebar a) {
+    color: #BB81FF;
+  }
+}
