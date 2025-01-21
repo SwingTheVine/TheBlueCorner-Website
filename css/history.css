@@ -166,6 +166,29 @@ h3, h4, h5 {
   }
 }
 
+/* Any screen less than or equal to 1027 pixels in width */
+@media screen and (max-width: 1027px) {
+
+  /* Removes custom styling */
+  .sidebar-and-page {
+    display: unset;
+  }
+
+  /* Hides the sidebar */
+  .sidebar {
+    display: none;
+  }
+}
+
+/* Any screen less than or equal to 649 pixels in width */
+@media screen and (max-width: 649px) {
+
+  /* Overrides all content image width (makes them bigger) */
+  main img.content-image {
+    min-width: 90%;
+  }
+}
+
 /*
 "Cornerness, Blueness, and bottom-rightness are the three uncompromisable positions of the True Corner." - Scout107
 "STAY TRUE, STAY BLUE" - Nexiy

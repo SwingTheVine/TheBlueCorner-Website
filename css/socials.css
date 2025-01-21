@@ -1,9 +1,9 @@
 /* Content grid with image on left */
 .social-content-image-left {
   display: grid;
-  grid-template-columns: 100px 1fr;
-  margin-top: 48px;
-  padding: 16px 16px 16px 16px;
+  grid-template-columns: auto 1fr;
+  margin-top: 3em;
+  padding: 1em;
   color: black;
   transition:
     background-color 0.25s;
@@ -34,8 +34,8 @@ a:focus .social-content-image-left {
 /* Social media description */
 .social-content-flavor {
   display: grid;
-  grid-template-rows: 32px 20px 1fr;
-  margin-left: 32px;
+  grid-template-rows: auto auto 1fr;
+  margin-left: 2em;
 }
 
 /* Social media name/channel on specific platform */
@@ -43,6 +43,11 @@ a:focus .social-content-image-left {
   margin-top: 0px;
   font-size: 1em;
   font-weight: bold;
+}
+
+/* The main social icon for each social */
+.social-content-image-left img.social-content-image {
+  width: 6.25em;
 }
 
 /* Dark mode */
@@ -73,5 +78,34 @@ a:focus .social-content-image-left {
   /* Makes focus/hover on links noticeable */
   .social-content-image-left:hover, a:focus .social-content-image-left {
     border: 2px solid Highlight;
+  }
+}
+
+/* Any screen less than or equal to 449 pixels in width */
+@media screen and (max-width: 449px) {
+
+  /* Converts the grid into 1 column */
+  .social-content-image-left {
+    grid-template-columns: auto;
+    margin-top: 6em;
+  }
+
+  /* Removes some now defunct grid styling */
+  .social-content-flavor {
+    margin-left: 0;
+  }
+
+  /* Centers the socials*/
+  .social-content-flavor h2,
+  .social-subname,
+  .social-content-image-left picture,
+  .social-content-image-left img {
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  /* Allows word breaking */
+  .social-subname {
+    word-break: break-all;
   }
 }

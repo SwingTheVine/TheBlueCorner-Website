@@ -12,6 +12,13 @@
   z-index: 999;
 }
 
+/* Banner buttons */
+.banner-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
 /* Banner logo */
 .banner-image {
   border-radius: 25%;
@@ -225,7 +232,9 @@ main {
 main,
 footer {
   background-color: white;
-  width: 664px;
+  min-width: 100%;
+  max-width: 728px;
+  box-sizing: border-box;
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 50px;
@@ -263,8 +272,7 @@ footer a:hover .footer-icon, footer a:focus .footer-icon {
 
 /* Footer website navigation */
 .footer-nav {
-  margin-top: 0.5em;
-  padding: 0 10%;
+  margin: 0.5em 10% 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
@@ -468,5 +476,66 @@ span:has(img.profile-icon) {
   /* Makes the banner visible */
   .banner {
     border-bottom: 2px solid WindowText;
+  }
+}
+
+/* Any screen less than or equal to 649 pixels in width */
+@media screen and (max-width: 649px) {
+
+  /* Banner dynamically collapses into rows */
+  .banner {
+    flex-wrap: wrap;
+  }
+
+  /* To compensate for the banner taking up
+  more height, the <main> content gets pushed
+  further down the screen */
+  main {
+    margin-top: 175px;
+  }
+
+  /* The footer navigation is now 1 column */
+  .footer-nav {
+    grid-template-columns: 1fr;
+    margin: auto;
+  }
+
+  /* Content images blocks are spaced further apart */
+  .content-image-right,
+  .content-image-left {
+    grid-template-columns: auto;
+    margin-top: 8em;
+  }
+
+  /* All images/videos/GIFs are now below the flavor */
+  .content-image,
+  .content-video {
+    order: 2;
+    margin-top: 1em;
+  }
+
+  /* All flavor is now above the image/video/GIF */
+  .content-image-flavor {
+    order: 1;
+  }
+}
+
+/* Any screen less than or equal to 379 pixels in width */
+@media screen and (max-width: 379px) {
+
+  /* The banner image is now hidden */
+  .banner-image {
+    display: none;
+  }
+
+  /* The banner buttons are now hidden */
+  .banner-button-wrapper {
+    display: none;
+  }
+
+  /* Since the only method of page navigation left in
+  the banner is the banner title, it is now obviously a link */
+  .banner-title {
+    text-decoration: dotted underline;
   }
 }
