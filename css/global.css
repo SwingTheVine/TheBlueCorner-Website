@@ -263,10 +263,18 @@ footer a:hover .footer-icon, footer a:focus .footer-icon {
 
 /* Footer website navigation */
 .footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25% 25%;
-  margin: 0 20%;
+  margin-top: 0.5em;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+}
+
+.footer-nav a.link {
+  flex: 1 1;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Any plain-text link */

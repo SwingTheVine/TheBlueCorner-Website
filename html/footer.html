@@ -47,17 +47,22 @@
   Website navigation:
 </p>
 <nav class="footer-nav">
-  <a href="/" class="link" style="flex: 1 1;" aria-label="Visit our 'About Us' page. Opens in the same tab">
+  <a class="screen-reader-bypass" role="button" tabindex="0" onclick="focusToId('footer-nav-bottom', event)" onkeydown="focusToId('footer-nav-bottom', event)">Skip to bottom of navigation list</a>
+  <a id="footer-nav-top" href="/" class="link" style="text-decoration: line-through;" aria-label="Visit our home page. Opens in the same tab">
+    Home&nbsp;Page&nbsp;(Site&nbsp;Map)
+  </a>
+  <a href="/" class="link" aria-label="Visit our 'About Us' page. Opens in the same tab">
     About&nbsp;Us
   </a>
-  <a href="/history.html" class="link" style="flex: 1 1;" aria-label="Visit our history document. Opens in the same tab">
+  <a href="/history.html" class="link" aria-label="Visit our history document. Opens in the same tab">
     Our&nbsp;History
   </a>
-  <a href="/hall-of-fame.html" class="link" style="flex: 1 1;" aria-label="Visit our hall of fame. Opens in the same tab">
+  <a href="/hall-of-fame.html" class="link" aria-label="Visit our hall of fame. Opens in the same tab">
     Hall&nbsp;Of&nbsp;Fame
   </a>
-  <a href="/socials.html" class="link" style="flex: 1 1;" aria-label="Visit the page with all of our socials on it. Opens in the same tab">
+  <a id="footer-nav-bottom" href="/socials.html" class="link" aria-label="Visit the page with all of our socials on it. Opens in the same tab">
     Join&nbsp;Us
   </a>
+  <a class="screen-reader-bypass" role="button" tabindex="0" onclick="focusToId('footer-nav-top', event)" onkeydown="focusToId('footer-nav-top', event)">Skip to top of navigation list</a>
 </nav>
 <!-- End of footer -->
