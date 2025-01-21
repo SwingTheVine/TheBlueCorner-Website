@@ -62,7 +62,7 @@ BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
 
   /* Makes social links visible */
   .social-content-image-left {
-    border: 2px dotted LinkText;
+    border: 2px solid LinkText;
     transition: 
       border 0.1s;
   }

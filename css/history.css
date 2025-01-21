@@ -147,7 +147,7 @@ h3, h4, h5 {
   .sidebar-link-h3,
   .sidebar-link-h4,
   .sidebar-link-h5 {
-    border: 2px dashed ButtonText;
+    border: 2px solid ButtonText;
     transition:
       border 0.1s;
   }
@@ -158,7 +158,11 @@ h3, h4, h5 {
   .sidebar-link-h3:hover, .sidebar-link-h3:focus,
   .sidebar-link-h4:hover, .sidebar-link-h4:focus,
   .sidebar-link-h5:hover, .sidebar-link-h5:focus {
-    border: 2px solid HighLight;
+    border: 2px solid Highlight;
+  }
+
+  .sidebar {
+    border: 2px solid WindowText;
   }
 }
 
