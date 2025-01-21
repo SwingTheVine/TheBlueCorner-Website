@@ -20,12 +20,14 @@ that are a parent of any element with "social-content-image-left" */
 /* Targets all children elements with "social-content-image" class
 that are a parent of any element with "social-content-image-left"
 BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
-.social-content-image-left:hover .social-content-image {
+.social-content-image-left:hover .social-content-image,
+a:focus .social-content-image {
   animation: shake 0.5s;
 }
 
 /* Left content grid highlight when hovered/focused */
-.social-content-image-left:hover {
+.social-content-image-left:hover,
+a:focus .social-content-image-left {
   background: lightgray;
 }
 
@@ -51,8 +53,9 @@ BUT ONLY WHEN THE PARENT ELEMENT IS HOVERED/FOCUSED */
     color: #E7E7E7;
   }
 
-  /* Currently hovered social background */
-  .social-content-image-left:hover {
+  /* Currently hovered/focused social background */
+  .social-content-image-left:hover,
+  a:focus .social-content-image-left {
     background-color: #204279;
   }
 }
