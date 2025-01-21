@@ -261,6 +261,14 @@ footer a:hover .footer-icon, footer a:focus .footer-icon {
   animation: shake 0.5s;
 }
 
+/* Footer website navigation */
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25% 25%;
+  margin: 0 20%;
+}
+
 /* Any plain-text link */
 .link {
   text-decoration: underline dotted;
