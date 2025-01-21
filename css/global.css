@@ -41,6 +41,75 @@
   text-decoration: underline solid;
 }
 
+/* Banner seach bar */
+.banner-search-bar {
+  color: black;
+  background-color: #0bbdcf;
+  border: none;
+  padding: 0.375rem 0.75rem 0.375rem 0.5rem;
+  font-size: 1.125em;
+  border-radius: 0 1em 1em 0;
+  width: 27ch;
+  transition: 
+    background-color 0.15s,
+    border-radius 0.15s;
+
+  /* Font stack is as follows:
+   * Highest Priority (Roboto Mono)
+   * Windows fallback (Courier New)
+   * macOS fallback (Monaco)
+   * Linux fallback (DejaVu Sans Mono)
+   * Any possible monospace font (monospace)
+   * Last resort (Arial) */
+  font-family: 'Roboto Mono', 'Courier New', 'Monaco', 'DejaVu Sans Mono', monospace, 'Arial';
+  font-weight: bold;
+  }
+
+.banner-search-bar::placeholder {
+  color: black;
+
+  /* Font stack is as follows:
+   * Highest Priority (Roboto Mono)
+   * Windows fallback (Courier New)
+   * macOS fallback (Monaco)
+   * Linux fallback (DejaVu Sans Mono)
+   * Any possible monospace font (monospace)
+   * Last resort (Arial) */
+  font-family: 'Roboto Mono', 'Courier New', 'Monaco', 'DejaVu Sans Mono', monospace, 'Arial';
+  font-weight: normal;
+}
+
+/* Banner search bar when hovered/focused */
+.banner-search-bar:hover, .banner-search-bar:focus-visible,
+.banner-search-button:hover, .banner-search-button:focus {
+  background-color: #a7f5fa;
+  border-bottom-right-radius: 0%;
+}
+
+/* Banner search bar when activated */
+.banner-search-button:active {
+  background-color: #11778d;
+}
+
+/* Banner search button */
+.banner-search-button {
+  font-size: 1.125em;
+  padding: 0.375rem 0.5rem 0.375rem 0.75rem;
+  cursor: pointer;
+  background-color: #0bbdcf;
+  border-radius: 50% 0 0 50%;
+  border: none;
+  transition: 
+    transform 0.2s,
+    background-color 0.15s;
+}
+
+/* Gives the search button some width (else it disappears) */
+.banner-search-button img {
+  margin-top: 0.25em;
+  width: 1em;
+}
+
 /* Website buttons */
 .content-button,
 .banner-button,
@@ -264,9 +333,10 @@ footer {
     transform 0.2s;
 }
 
-/* Shakes the footer icon when hover/focused */
+/* Shakes the icons when hover/focused */
 .footer-icon:hover, .footer-icon:focus
-footer a:hover .footer-icon, footer a:focus .footer-icon {
+footer a:hover .footer-icon, footer a:focus .footer-icon,
+.banner-search-button:hover img, .banner-search-button:focus img {
   animation: shake 0.5s;
 }
 
@@ -434,6 +504,23 @@ span:has(img.profile-icon) {
     color: #E7E7E7;
   }
 
+  /* Banner search bar in dark mode */
+  .banner-search-bar,
+  .banner-search-button {
+    background-color: #4596ED;
+  }
+
+  /* Banner search bar focused in dark mode */
+  .banner-search-bar:hover, .banner-search-bar:focus-visible,
+  .banner-search-button:hover, .banner-search-button:focus {
+    background-color: #3671D9;
+  }
+
+  /* Banner search bar when activated */
+  .banner-search-button:active {
+    background-color: #11778d;
+  }
+
   /* Website buttons in dark mode */
   .content-button,
   .banner-button,
@@ -457,25 +544,33 @@ span:has(img.profile-icon) {
 /* High contrast mode */
 @media (forced-colors: active) {
 
-  /* Makes website buttons visible */
+  /* Makes website interactive elements visible */
   .content-button,
   .banner-button,
   .screen-reader-bypass,
-  .video-button {
-    border: 2px solid ButtonText;
+  .video-button,
+  .banner-search-button {
+    border: 2px solid ButtonBorder;
   }
 
-  /* Makes website buttons highlighted */
+  /* Makes website interactive elements highlighted */
   .content-button:focus, .content-button:hover,
   .banner-button:focus, .banner-button:hover,
   .screen-reader-bypass:focus, .screen-reader-bypass:hover,
-  .video-button:focus, .video-button:hover {
+  .video-button:focus, .video-button:hover,
+  .banner-search-button:focus, .banner-search-button:hover,
+  .banner-search-bar:focus-visible {
     border: 2px solid Highlight;
   }
 
   /* Makes the banner visible */
   .banner {
-    border-bottom: 2px solid WindowText;
+    border-bottom: 2px solid CanvasText;
+  }
+
+  /* Makes the search bar visible */
+  .banner-search-bar {
+    border: 2px solid FieldText;
   }
 }
 
@@ -485,6 +580,11 @@ span:has(img.profile-icon) {
   /* Banner dynamically collapses into rows */
   .banner {
     flex-wrap: wrap;
+  }
+
+  /* Removes the "Under development" notice */
+  .banner small {
+    display: none;
   }
 
   /* To compensate for the banner taking up

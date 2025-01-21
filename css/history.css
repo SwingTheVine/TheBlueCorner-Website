@@ -147,6 +147,7 @@ h3, h4, h5 {
   .sidebar-link-h3,
   .sidebar-link-h4,
   .sidebar-link-h5 {
+    color: AccentColorText;
     border: 2px solid ButtonText;
     transition:
       border 0.1s;
@@ -161,8 +162,9 @@ h3, h4, h5 {
     border: 2px solid Highlight;
   }
 
+  /* Makes the sidebar visible */
   .sidebar {
-    border: 2px solid WindowText;
+    border: 2px solid CanvasText;
   }
 }
 
@@ -193,8 +195,13 @@ h3, h4, h5 {
 "Cornerness, Blueness, and bottom-rightness are the three uncompromisable positions of the True Corner." - Scout107
 "STAY TRUE, STAY BLUE" - Nexiy
 "We all gaze up into the blue sky" - Nexiy
-"Bot-less since 2017"
+"Bot-less since 2017!"
 "WCAG A compliant!"
 "WCAG AA compliant!"
 "Approximately 1,724,450 pixels placed!"
+"Da ba dee da ba di!"
+"Blue are the people here"
+"We shall meet again!"
+"If we were red, we would die!"
+"Fastest website in the West!"
 */

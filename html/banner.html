@@ -14,24 +14,17 @@
 </small>
 
 <div class="banner-button-wrapper">
-  <!-- About Us Button -->
-  <a href="/" class="banner-button" aria-label="Visit our 'About Us' page. Opens in the same tab">
-    About<br>Us
-  </a>
-
-  <!-- Our History Button -->
-  <a href="/history.html" class="banner-button" aria-label="Visit our history document. Opens in the same tab">
-    Our<br>History
-  </a>
-
-  <!-- Hall Of Fame Button -->
-  <a href="/hall-of-fame.html" class="banner-button" aria-label="Visit our hall of fame. Opens in the same tab">
-    Hall&nbsp;Of<br>Fame
-  </a>
-
-  <!-- Join Us Button -->
-  <a href="/socials.html" class="banner-button" aria-label="Visit the page with all of our socials on it. Opens in the same tab">
-    Join<br>Us
-  </a>
+  
+  <!-- Seach Bar -->
+  <form style="position: relative; display: flex; margin-right: 1ch;" action="/search" method="get">
+    <button class="banner-search-button" type="submit" aria-label="Search the website">
+      <picture>
+        <source srcset="./assets/icons/FontAwesome_MagnifyingGlass_Light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+        <source srcset="./assets/icons/FontAwesome_MagnifyingGlass_Dark.svg" media="(prefers-color-scheme: dark)">
+        <img src="./assets/icons/FontAwesome_MagnifyingGlass_Light.svg" alt="">
+      </picture>
+    </button>
+    <input class="banner-search-bar" type="search" name="q" placeholder="Search the website..." aria-label="Search the website" required>
+  </form>
 </div>
 <!-- End of Banner -->
