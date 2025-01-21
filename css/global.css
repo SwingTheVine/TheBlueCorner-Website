@@ -1,5 +1,5 @@
-/* Entire navbar */
-.navbar-grid {
+/* Entire banner */
+.banner {
   background-color: #51E9F4;
   display: flex;
   align-items: center;
@@ -12,15 +12,15 @@
   z-index: 999;
 }
 
-/* Navbar logo */
-.navbar-image {
+/* Banner logo */
+.banner-image {
   border-radius: 25%;
   width: 4em;
   height: auto;
 }
 
-/* Navbar title */
-.navbar-title {
+/* Banner title */
+.banner-title {
   display: inline;
   font-size: 1.5em;
   font-weight: bold;
@@ -29,14 +29,14 @@
   text-decoration: none;
 }
 
-/* Navbar title hover/focus */
-.navbar-title:hover, .navbar-title:focus {
+/* Banner title hover/focus */
+.banner-title:hover, .banner-title:focus {
   text-decoration: underline solid;
 }
 
 /* Website buttons */
 .content-button,
-.navbar-button,
+.banner-button,
 .screen-reader-bypass,
 .video-button {
   display: inline-block;
@@ -57,7 +57,7 @@
 
 /* Website buttons mouse-over & focus */
 .content-button:hover, .content-button:focus,
-.navbar-button:hover, .navbar-button:focus,
+.banner-button:hover, .banner-button:focus,
 .screen-reader-bypass:hover, .screen-reader-bypass:focus {
   background-color: #0c97ae;
   border-bottom-right-radius: 0%;
@@ -70,7 +70,7 @@
 
 /* Website buttons pressed*/
 .content-button:active,
-.navbar-button:active,
+.banner-button:active,
 .screen-reader-bypass:active,
 .video-button:active {
   background-color: #11788d;
@@ -401,18 +401,18 @@ span:has(img.profile-icon) {
   }
 
   /* Banner in dark mode */
-  .navbar-grid {
+  .banner {
     background-color: #234785;
   }
 
   /* Banner title in dark mode */
-  .navbar-title {
+  .banner-title {
     color: #E7E7E7;
   }
 
   /* Website buttons in dark mode */
   .content-button,
-  .navbar-button,
+  .banner-button,
   .screen-reader-bypass,
   .video-button {
     background-color: #4A99ED;
@@ -420,12 +420,12 @@ span:has(img.profile-icon) {
 
   /* Links (excluding buttons) in dark mode */
   a:not(
-    .content-button, .navbar-button, .navbar-title, .screen-reader-bypass, .video-button, .sidebar a) {
+    .content-button, .banner-button, .banner-title, .screen-reader-bypass, .video-button, .sidebar a) {
     color: #85A8ff;
   }
 
   /* Visted links (excluding buttons) in dark mode */
-  a:visited:not(.content-button, .navbar-button, .navbar-title, .screen-reader-bypass, .video-button, .sidebar a) {
+  a:visited:not(.content-button, .banner-button, .banner-title, .screen-reader-bypass, .video-button, .sidebar a) {
     color: #BB81FF;
   }
 }
@@ -435,7 +435,7 @@ span:has(img.profile-icon) {
 
   /* Makes website buttons visible */
   .content-button,
-  .navbar-button,
+  .banner-button,
   .screen-reader-bypass,
   .video-button {
     border: 2px solid ButtonText;
@@ -443,14 +443,14 @@ span:has(img.profile-icon) {
 
   /* Makes website buttons highlighted */
   .content-button:focus, .content-button:hover,
-  .navbar-button:focus, .navbar-button:hover,
+  .banner-button:focus, .banner-button:hover,
   .screen-reader-bypass:focus, .screen-reader-bypass:hover,
   .video-button:focus, .video-button:hover {
     border: 2px solid Highlight;
   }
 
   /* Makes the banner visible */
-  .navbar-grid {
+  .banner {
     border-bottom: 2px solid WindowText;
   }
 }

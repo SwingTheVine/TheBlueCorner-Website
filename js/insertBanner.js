@@ -1,7 +1,7 @@
-fetch('./html/navbar.html')
+fetch('./html/banner.html')
   .then(response => response.text())
   .then(data => {
-      document.getElementById('navbar').innerHTML = data;
+      document.getElementById('banner').innerHTML = data;
   })
   .catch(error => {
       console.error('Error:', error);
