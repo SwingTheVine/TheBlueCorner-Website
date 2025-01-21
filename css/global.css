@@ -7,8 +7,8 @@
   position: fixed;
   top: 0%;
   left: 0%;
-  width: 100%;
-  padding: 4px 10px 0px 10px;
+  width: 99%;
+  padding: 4px 1% 0px 10px;
   z-index: 999;
 }
 
@@ -21,8 +21,10 @@
 
 /* Navbar title */
 .navbar-title {
+  display: inline;
   font-size: 1.5em;
   font-weight: bold;
+  width: max-content;
   color: black;
   text-decoration: none;
 }
@@ -30,15 +32,6 @@
 /* Navbar title hover/focus */
 .navbar-title:hover, .navbar-title:focus {
   text-decoration: underline solid;
-}
-
-/* Navbar flexbox for buttons */
-.navbar-button-flex {
-  display: flex;
-  flex-direction: row;
-  column-gap: 8px;
-  margin-right: 20px;
-  justify-content: right;
 }
 
 /* Website buttons */
