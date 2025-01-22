@@ -1,0 +1,47 @@
+/* Header overrides */
+h2 {
+  margin-top: 1em;
+  text-align: center;
+}
+
+/* Content search bar */
+.search-bar {
+  margin: 1em auto 0;
+  width: fit-content;
+}
+
+/* Search results container */
+.search-results #search-results {
+  width: 90%;
+  margin: 1em auto 0;
+  border: 2px solid #727272;
+  border-radius: 1em;
+  min-height: 50em;
+}
+
+/* Pre-search results blurb */
+.search-results-pre {
+  text-align: center;
+  width: min-content;
+  margin: 2.5em auto 0;
+  padding: 0.5em 2em;
+  transition: 
+    background-color 0.2s;
+}
+
+/* Pre-search results image */
+.search-results-pre span {
+  font-size: xx-large;
+}
+
+/* Pre-search results flavor */
+.search-results-pre p {
+  font-size: medium;
+  margin-top: 0.25em;
+}
+
+/* Search results hover/focus */
+.search-results-pre:hover {
+  background-color: #C8C8C8;
+}
+
