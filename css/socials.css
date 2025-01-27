@@ -40,7 +40,7 @@ a:focus .social-content-image-left {
 
 /* Social media name/channel on specific platform */
 .social-subname {
-  margin-top: 0px;
+  margin-top: 0;
   font-size: 1em;
   font-weight: bold;
 }

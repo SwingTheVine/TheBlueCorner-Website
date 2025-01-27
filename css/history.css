@@ -1,6 +1,6 @@
 /* Page content */
 .history {
-  margin-top: 64px;
+  margin-top: 4em;
 }
 
 /* Author text */
@@ -8,12 +8,12 @@
   text-align: center;
   color: gray;
   font-size: 1.25em;
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 /* Header 2 */
 h2 {
-  margin-top: 64px;
+  margin-top: 4em;
 }
 
 /* Headers 3, 4, and 5 */
@@ -30,10 +30,10 @@ h3, h4, h5 {
 /* Sidebar grid */
 .sidebar {
   background-color: white;
-  margin: 100px 25px 0px 25px;
-  padding: 16px;
-  height: 500px;
-  width: 200px;
+  margin: 6.25em 1.5625em 0 1.5625em;
+  padding: 1em;
+  height: 32em;
+  width: 21ch;
   justify-self: right;
   display: grid;
   grid-template-rows: auto;
@@ -46,7 +46,7 @@ h3, h4, h5 {
 .sidebar-link-h3,
 .sidebar-link-h4,
 .sidebar-link-h5 {
-  width: 195px;
+  width: 20ch;
   margin-bottom: 8px;
   font-weight: bold;
   text-decoration: none;
@@ -70,8 +70,8 @@ h3, h4, h5 {
 
 /* Sidebar link h2 specific */
 .sidebar-link-h2 {
-  width: 185px;
-  padding-left: 10px;
+  width: 19ch;
+  padding-left: 1ch;
 }
 
 /* Sidebar link h3, h4, h5 specific */
@@ -79,22 +79,22 @@ h3, h4, h5 {
 .sidebar-link-h4,
 .sidebar-link-h5 {
   color: gray;
-  width: 175px;
-  padding-left: 20px;
+  width: 18ch;
+  padding-left: 2ch;
 }
 
 /* Sidebar link h4, h5 specific */
 .sidebar-link-h4,
 .sidebar-link-h5 {
   font-weight: normal;
-  width: 165px;
-  padding-left: 30px;
+  width: 17ch;
+  padding-left: 3ch;
 }
 
 /* Sidebar link h5 specific */
 .sidebar-link-h5 {
-  width: 155px;
-  padding-left: 40px;
+  width: 16ch;
+  padding-left: 4ch;
 }
 
 /* Dark mode */

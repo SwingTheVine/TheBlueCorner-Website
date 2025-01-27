@@ -8,7 +8,7 @@
   top: 0%;
   left: 0%;
   width: 99%;
-  padding: 4px 1% 0px 10px;
+  padding: 0.25rem 1% 0 0.625rem;
   z-index: 999;
 }
 
@@ -117,9 +117,9 @@
 .video-button {
   display: inline-block;
   color: black;
-  border-width: 0px;
-  border-radius: 16px;
-  padding: 6px 12px 6px 12px;
+  border-width: 0;
+  border-radius: 1em;
+  padding: 0.33em 0.66em;
   font-size: 1.125em;
   font-weight: bold;
   cursor: pointer;
@@ -154,28 +154,28 @@
 
 /* Content button */
 .content-button {
-  margin-top: 16px;
+  margin-top: 1em;
   margin-right: auto;
 }
 
 /* Content image (right) */
 .content-image-right {
   display: grid;
-  grid-template-columns: 1fr 250px;
+  grid-template-columns: 3fr 2fr;
   margin-top: 32px;
 }
 
 /* Content image (left) */
 .content-image-left {
   display: grid;
-  grid-template-columns: 250px 1fr;
-  margin-top: 32px;
+  grid-template-columns: 2fr 3fr;
+  margin-top: 2em;
 }
 
 /* Content image flavor text */
 .content-image-flavor {
   display: grid;
-  grid-template-rows: 32px 1fr;
+  grid-template-rows: auto 1fr;
 }
 
 /* Content images */
@@ -259,10 +259,10 @@ video {
 blockquote {
   font-size: 1.125em;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 0.625em;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 2em;
   color: gray;
   width: 75%;
 }
@@ -273,17 +273,12 @@ p {
   margin-block-end: 0;
   margin-inline-start: 0;
   margin-inline-end: 0;
-  margin-top: 14px;
+  margin-top: 0.875em;
 }
 
 /* Ordered List */
 ol {
-  padding-left: 50px;
-}
-
-/* List Item */
-li {
-  padding-left: 5px;
+  padding-left: 6ch;
 }
 
 /* Removes the marker for the list items. i.e. "*" */
@@ -293,8 +288,8 @@ li {
 
 /* Main body formatting */
 main {
-  margin-top: 100px;
-  padding-top: 16px;
+  margin-top: 6.25em;
+  padding-top: 1em;
 }
 
 /* Main content page (the white part) */
@@ -302,16 +297,14 @@ main,
 footer {
   background-color: white;
   min-width: 100%;
-  max-width: 728px;
+  max-width: 76ch;
   box-sizing: border-box;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 50px;
+  padding: 1em 2em 3.125em;
 }
 
 /* Footer specific */
 footer {
-  padding-top: 160px;
+  padding-top: 10em;
   text-align: center;
   color: #727272;
 }
@@ -327,8 +320,8 @@ footer {
 
 /* Footer icon images*/
 .footer-icon {
-  height: 32px;
-  margin: 16px;
+  height: 2em;
+  margin: 1em;
   transition:
     transform 0.2s;
 }
@@ -392,7 +385,7 @@ footer a:hover .footer-icon, footer a:focus .footer-icon,
 
 /* Specific styling for skip link unhide */
 .screen-reader-bypass:focus {
-  top: 100px;
+  top: 6.25em;
   z-index: 999;
 }
 
@@ -401,7 +394,7 @@ footer a:hover .footer-icon, footer a:focus .footer-icon,
   position: relative;
   display: block;
   margin: auto;
-  margin-top: 48px;
+  margin-top: 3em;
   width: 90%;
 }
 
@@ -442,8 +435,8 @@ footer a:hover .footer-icon, footer a:focus .footer-icon,
   background-color: white;
   font-size: 1em;
   text-align: center;
-  margin-top: 50px;
-  padding: 5px 5px 5px 5px;
+  margin-top: 3.125em;
+  padding: 0.3125em;
 }
 
 /* The little profile pictures */
@@ -580,6 +573,7 @@ span:has(img.profile-icon) {
   /* Banner dynamically collapses into rows */
   .banner {
     flex-wrap: wrap;
+    padding-bottom: 0.5em;
   }
 
   /* Removes the "Under development" notice */
@@ -591,7 +585,7 @@ span:has(img.profile-icon) {
   more height, the <main> content gets pushed
   further down the screen */
   main {
-    margin-top: 175px;
+    margin-top: 9em;
   }
 
   /* The footer navigation is now 1 column */
