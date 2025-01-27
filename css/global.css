@@ -554,7 +554,7 @@ span:has(img.profile-icon) {
   .screen-reader-bypass:focus, .screen-reader-bypass:hover,
   .video-button:focus, .video-button:hover,
   .banner-search-button:focus, .banner-search-button:hover,
-  .banner-search-bar:focus-visible {
+  .banner-search-bar:focus-visible, .banner-search-bar:hover {
     border: 2px solid Highlight;
   }
 
@@ -576,11 +576,6 @@ span:has(img.profile-icon) {
   .banner {
     flex-wrap: wrap;
     padding-bottom: 0.5em;
-  }
-
-  /* Removes the "Under development" notice */
-  .banner small {
-    display: none;
   }
 
   /* To compensate for the banner taking up
