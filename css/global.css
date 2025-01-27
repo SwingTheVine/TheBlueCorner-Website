@@ -531,12 +531,12 @@ span:has(img.profile-icon) {
 
   /* Links (excluding buttons) in dark mode */
   a:not(
-    .content-button, .banner-button, .banner-title, .screen-reader-bypass, .video-button, .sidebar a) {
+    .content-button, .banner-button, .banner-title, .screen-reader-bypass, .video-button, .sidebar a, .search-results-match) {
     color: #85A8ff;
   }
 
   /* Visted links (excluding buttons) in dark mode */
-  a:visited:not(.content-button, .banner-button, .banner-title, .screen-reader-bypass, .video-button, .sidebar a) {
+  a:visited:not(.content-button, .banner-button, .banner-title, .screen-reader-bypass, .video-button, .sidebar a, .search-results-match) {
     color: #BB81FF;
   }
 }
@@ -620,17 +620,17 @@ span:has(img.profile-icon) {
   }
 }
 
-/* Any screen less than or equal to 379 pixels in width */
-@media screen and (max-width: 379px) {
+/* Any screen less than or equal to 349 pixels in width */
+@media screen and (max-width: 349px) {
 
   /* The banner image is now hidden */
   .banner-image {
     display: none;
   }
 
-  /* The banner buttons are now hidden */
-  .banner-button-wrapper {
-    display: none;
+  /* The search bar now resizes itself */
+  .banner-search-bar {
+    width: 100%;
   }
 
   /* Since the only method of page navigation left in

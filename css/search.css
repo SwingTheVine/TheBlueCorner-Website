@@ -16,17 +16,66 @@ h2 {
   margin: 1em auto 0;
   border: 2px solid #727272;
   border-radius: 1em;
-  min-height: 50em;
+  min-height: 1em;
 }
 
 /* Pre-search results blurb */
 .search-results-pre {
   text-align: center;
   width: min-content;
-  margin: 2.5em auto 0;
+  margin: 2.5em auto;
   padding: 0.5em 2em;
   transition: 
     background-color 0.2s;
+}
+
+.search-results-match {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 1.5em 2ch;
+  padding: 0.5em 0;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: 
+    background-color 0.2s;
+}
+
+/* Search results match emoji */
+.search-results-match-emoji {
+  font-size: 3em;
+  margin-top: 0;
+  width: fit-content;
+  margin: auto;
+  transition:
+    transform 0.2s;
+}
+
+/* Shakes the icons when hover/focused */
+.search-results-match:hover .search-results-match-emoji, .search-results-match:focus .search-results-match-emoji {
+  animation: shake 0.5s;
+}
+
+/* Search results match count (e.g. "3 matches") */
+.search-results-match-count {
+  margin-top: 0.25em;
+  font-size: small;
+}
+
+/* Search results match site name */
+.search-results-match h3 {
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.search-results-match:hover, .search-results-match:focus {
+  background-color: #C8C8C8;
+}
+
+/* Search results match flavor */
+.search-results-match p:not(.search-results-match-count):not(.search-results-match-emoji) {
+  text-align: left;
+  margin-top: 0.25em;
 }
 
 /* Pre-search results image */
@@ -41,7 +90,53 @@ h2 {
 }
 
 /* Search results hover/focus */
-.search-results-pre:hover {
+.search-results-pre:hover,
+.search-results-pre:focus {
   background-color: #C8C8C8;
 }
 
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  
+  /* Search result match text */
+  .search-results-match {
+    color: #E7E7E7;
+  }
+
+  /* Currently hovered/focused search result match background */
+  .search-results-match:hover, .search-results-match:focus,
+  .search-results-pre:hover {
+    background-color: #204279;
+  }
+}
+
+/* High contrast mode */
+@media (forced-colors: active) {
+
+  /* Makes social links visible */
+  .search-results-match {
+    border: 2px solid LinkText;
+    transition: 
+      border 0.1s;
+  }
+
+  /* Makes focus/hover on links noticeable */
+  .search-results-match:hover, .search-results-match:focus {
+    border: 2px solid Highlight;
+  }
+}
+
+/* Any screen less than or equal to 399 pixels in width */
+@media screen and (max-width: 399px) {
+
+  /* Converts the grid into 1 column */
+  .search-results-match {
+    grid-template-columns: auto;
+    margin-top: 6em;
+  }
+
+  /* Makes search bar width */
+  body #search-bar {
+    width: 100%;
+  }
+}
