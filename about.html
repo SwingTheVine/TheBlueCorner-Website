@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Tab and SEO metadata -->
+    <link rel="icon" href="./assets/icons/TBC_Favicon.webp">
+    <title>About Us &mdash; The Blue Corner</title>
+    <meta name="description" content="We are The Blue Corner! We are a community centered around Reddit r/place events. Learn more about us here.">
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="./css/global.css">
+
+    <!-- Website fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  </head>
+  <body>
+
+    <!-- The Skip Link -->
+    <a class="screen-reader-bypass" role="link" tabindex="0" onclick="scrollToClass('page', event)" onkeydown="scrollToClass('page', event)">Skip to page content</a>
+
+    <!-- The Banner -->
+    <div id="banner" class="banner" role="banner"></div>
+
+    <!-- All of the page -->
+    <div class="page">
+
+      <!-- JS disabled popup -->
+      <noscript class="noscript-popup">
+        JavaScript is disabled.
+        <br>Some parts of the website will not work.
+        <br>Enable JavaScript for the full experience.
+      </noscript>
+
+      <!-- Main content on the page -->
+      <main>
+
+        <!-- Top Text -->
+        <div>
+          <h1>About&nbsp;Us</h1>
+          <p>
+            Welcome to The Blue Corner!
+            Curious about what "The Blue Corner" is?
+            You can learn more about us on this page.
+          </p>
+          <!-- End of Top Text-->
+        </div>
+
+        <!-- Who We Are -->
+        <div class="content-image-right">
+          <div class="content-image-flavor">
+            <h2>Who We Are</h2>
+            <p>
+              We are a group formed from Reddit&rsquo;s "Place" April Fools event.
+              The Blue Corner dedicates itself to a single purpose: making the bottom right corner of the canvas blue.
+              Our group is one of a few r/place communities that are not tied to any country or trademarked media.
+              We just like blue corners!
+              Although the result stays the same, the process we use to accomplish the blue corner changes.
+              The Blue Corner started as a Reddit community.
+              Later, we moved to Discord and began establishing a chain of command.
+              To learn more about our chain of command, keep reading.
+            </p>
+          </div>
+
+          <!-- Start of video -->
+          <div class="content-video">
+            <video id="video-TBC" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of the xQc logo being replaced by blue.">
+              <source src="./assets/videos/TBC.webm" type="video/webm">
+              Your browser does not support this video.
+            </video>
+            <div class="video-shade"></div>
+            <a id="video-TBC-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-aria" aria-controls="video-TBC" onclick="triggerVideo('video-TBC-button', event)" onkeydown="triggerVideo('video-TBC-button', event)">
+              <picture>
+                <source srcset="./assets/icons/FontAwesome_Circle-Pause_Light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+                <source srcset="./assets/icons/FontAwesome_Circle-Pause_Dark.svg" media="(prefers-color-scheme: dark)">
+                <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause_Light.svg" alt="">
+              </picture>
+              <div id="video-TBC-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
+            </a>
+            <!-- End of video -->
+          </div>
+          <!-- End of Who We Are -->
+        </div>
+
+        <!-- Diplomats -->
+        <div class="content-image-left">
+          <img class="content-image" src="./assets/images/TBC_Diplomat.webp" alt="An image of a Blue Corner diplomat working with another community." aria-describedby="img-desc-diplomat">
+          <div id="img-desc-diplomat" class="screen-reader-only">
+            This image contains a short conversation between two community representatives:
+            American Flag In Place representative, "FBI Is Coming After You" says: "HELP US WE ARE UNDER SERIOUS ATTACK."
+            "FBI Is Coming After You" sent an image of their art being destroyed.
+            The Blue Corner representative, "Scout107" says: "Will do."
+            "FBI Is Coming After You" replied: "THANK YOU SO MUCH."
+          </div>
+          <div class="content-image-flavor">
+            <h2>Diplomats</h2>
+            <p>
+              Is your community interested in allying with us?
+              If you are a diplomat looking to form that alliance, join our Discord!
+              We have a diplomatic channel through which we handle negotiations.
+              If you are an official diplomat/staff member of your community, you can also request the "Official Foreign Diplomat" role.
+              This role helps speed up processing future requests made by your community.
+              <br><a href="https://discord.gg/5Sk4v97R25" target="_blank" class="content-button" aria-label="Join our Discord and open the diplomat channel. Opens in a new tab">
+                Diplomat Channel
+              </a>
+            </p>
+          </div>
+          <!-- End of Diplomats -->
+        </div>
+
+        <!-- Chain of Command -->
+        <div style="margin-top: 7em;">
+          <h2>Chain of Command</h2>
+          <p>
+            Our chain of command consists of two layers: Congress and Units.
+            Each layer has its own leaders who actively collaborate with other groups in the same layer.
+            People in a group take orders from their leader.
+            The leader takes orders from higher-ranking layers.
+            Unit leaders are called "Generals."
+          </p>
+          <picture>
+            <source srcset="./assets/images/TBC_CoC_Layers_Light.webp" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+            <source srcset="./assets/images/TBC_CoC_Layers_Dark.webp" media="(prefers-color-scheme: dark)">
+            <img class="content-image" src="./assets/images/TBC_CoC_Layers_Light.webp" alt="An image of the chain of command of the blue corner community." aria-describedby="img-desc-coc">
+          </picture>
+          <div id="img-desc-coc" class="screen-reader-only">
+            This image is a visual representation of our chain of command.
+            Congress is run by admins who give orders to the diplomats and moderators.
+            Congress (which includes the admins, diplomats, and moderators) gives orders to the units.
+            Each unit is run by a general who recieves orders from congress and gives orders to the rest of the unit.
+          </div>
+
+          <!-- Congress -->
+          <div style="margin-top: 3em;">
+            <h2>Congress</h2>
+            <p>
+              Congress is the highest-ranking layer.
+              Its job is to govern and provide direction during events, ensuring they run smoothly.
+              Although it may seem simple, this requires a lot of experience and communication. 
+            </p>
+
+            <!-- Staff-->
+            <div style="margin-top: 1em;">
+              <h3>Staff</h3>
+              <p>
+                The leading body of Congress is the community&rsquo;s Admins.
+                Staff in this position are excellent at leadership and handling high-stress situations.
+                They embody The Blue Corner&rsquo;s core values and keep the community a fun place for everyone.
+                Their job is to manage The Blue Corner community, discuss problems, and decide what path the community should take.
+              </p>
+            </div>
+
+            <!-- Diplomats -->
+            <div style="margin-top: 1em;">
+              <h3>Diplomats</h3>
+              <p>
+                The role of diplomats is to gather and maintain healthy alliances with other communities.
+                This group excels in communication and professionalism.
+                They are allowed to speak on behalf of The Blue Corner and have a deep understanding of its values.
+                The job of a diplomat consists of reaching out to communities to foster an alliance.
+                They also serve as a bridge for allies to speak to The Blue Corner.
+                Diplomats commonly receive and relay requests made by allies.
+                Diplomats also advise Congress on decisions that may affect allies of The Blue Corner.
+              </p>
+            </div>
+
+            <!-- Moderators -->
+            <div style="margin-top: 1em;">
+              <h3>Moderators</h3>
+              <p>
+                The role of the Moderators is to manage certain aspects of the community whenever the Admins cannot.
+                Moderating chat, posting on social media, and assisting the Voice Call channel, jobs assigned to members of this group greatly vary.
+                Moderators also serve as a "beacon" dedicated to keeping The Blue Corner a safe and collaborative environment.
+                They also act as a go-between for the community, discussing innovative ideas created by the community with Congress.
+              </p>
+            </div>
+            <!-- End of Congress -->
+          </div>
+          
+          <!-- Units -->
+          <div style="margin-top: 3em;">
+            <h2>Units</h2>
+            <p>
+              Scout107 created the "Unit" system.
+              A "Unit" is a small group dedicated to completing a single task.
+              These groups are highly informal.
+              In 2024, unit leaders were named "Generals."
+              Anyone can join or leave a Unit or be in multiple Units simultaneously.
+              In addition, a Unit may not have a General (or may have several Generals).
+              However, Generals are always Congress members.
+              Leaders of Units (or Congress) may temporarily assign Units to work on a specific mission unrelated to their Unit&rsquo;s primary purpose.
+            </p>
+
+            <!-- Unit 1 -->
+            <div class="content-image-right">
+              <div class="content-flavor">
+                <h3>Unit 1 (True Corner Knights)</h3>
+                <p>
+                  This Unit is the core Unit of the four.
+                  The purpose of this group is to keep the bottom right corner pixel blue.
+                  Led by Scout107, Unit 1 defends against constant attacks.
+                  This Unit is more relaxed than others.
+                  Although it requires little communication or coordination, all appreciate this Unit.
+                  Previous generals of this Unit were: Scout107.
+                </p>
+              </div>
+
+              <!-- Start of video -->
+              <div class="content-video">
+                <video id="video-TBC-Unit1" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of stray colored pixels being replaced with blue pixels.">
+                  <source src="./assets/videos/TBC_Unit1.webm" type="video/webm">
+                  Your browser does not support this video.
+                </video>
+                <div class="video-shade"></div>
+                <a id="video-TBC-Unit1-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit1-aria" aria-controls="video-TBC-Unit1" onclick="triggerVideo('video-TBC-Unit1-button', event)" onkeydown="triggerVideo('video-TBC-Unit1-button', event)">
+                  <picture>
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Dark.svg" media="(prefers-color-scheme: dark)">
+                    <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause_Light.svg" alt="">
+                  </picture>
+                  <div id="video-TBC-Unit1-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
+                </a>
+                <!-- End of video -->
+              </div>
+              <!-- End of Unit 1 -->
+            </div>
+
+            <!-- Unit 2 -->
+            <div class="content-image-left">
+              <!-- Start to video -->
+              <div class="content-video">
+                <video id="video-TBC-Unit2" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of the blue corner art logo being griefed and quickly repaired.">
+                  <source src="./assets/videos/TBC_Unit2.webm" type="video/webm">
+                  Your browser does not support this video.
+                </video>
+                <div class="video-shade"></div>
+                <a id="video-TBC-Unit2-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit2-aria" aria-controls="video-TBC-Unit2" onclick="triggerVideo('video-TBC-Unit2-button', event)" onkeydown="triggerVideo('video-TBC-Unit2-button', event)">
+                  <picture>
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Dark.svg" media="(prefers-color-scheme: dark)">
+                    <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause_Light.svg" alt="">
+                  </picture>
+                  <div id="video-TBC-Unit2-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
+                </a>
+                <!-- End of video -->
+              </div>
+
+              <div class="content-flavor">
+                <h3>Unit 2 (Logo Knights)</h3>
+                <p>
+                  This Unit is the face of The Blue Corner and is responsible for maintaining the logo.
+                  The logo changes occasionally but always consists of the text "THEBLUECORNER."
+                  Led by SwingTheVine, this Unit defends against people looking to deface The Blue Corner.
+                  This Unit is fast-paced and requires lots of coordination.
+                  Using the overlay is recommended because the logo is detailed.
+                  Previous Generals of this Unit were: TheStruggleIsALie.
+                </p>
+              </div>
+              <!-- End of Unit 2-->
+            </div>
+            
+            <!-- Unit 3 -->
+            <div class="content-image-right">
+              <div class="content-flavor">
+                <h3>Unit 3 (Border Knights)</h3>
+                <p>
+                  This Unit is responsible for maintaining the border of The Blue Corner&rsquo;s territory.
+                  Led by Nexiy, this group is responsible for keeping the border pixels blue.
+                  In addition, if the border encroaches on our neighbor&rsquo;s territory, this group helps repair their art.
+                  They also repair any hearts that form on our border with our neighbors.
+                  This Unit does not require a lot of coordination.
+                  However, it requires a lot of communication.
+                  As the border spans a giant area, it requires diligence in observing different regions of the border to ensure they are intact.
+                </p>
+              </div>
+
+              <!-- Start of video -->
+              <div class="content-video">
+                <video id="video-TBC-Unit3" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of a pixel heart being drawn at the border between the blue corner&rsquo;s art and their neighbors art.">
+                  <source src="./assets/videos/TBC_Unit3.webm" type="video/webm">
+                  Your browser does not support this video.
+                </video>
+                <div class="video-shade"></div>
+                <a id="video-TBC-Unit3-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit3-aria" aria-controls="video-TBC-Unit3" onclick="triggerVideo('video-TBC-Unit3-button', event)" onkeydown="triggerVideo('video-TBC-Unit3-button', event)">
+                  <picture>
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Dark.svg" media="(prefers-color-scheme: dark)">
+                    <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause_Light.svg" alt="">
+                  </picture>
+                  <div id="video-TBC-Unit3-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
+                </a>
+                <!-- End of video -->
+              </div>
+              <!-- End of Unit 3-->
+            </div>
+
+            <!-- Unit 4 -->
+            <div class="content-image-left">
+              <!-- Start of video -->
+              <div class="content-video">
+                <video id="video-TBC-Unit4" autoplay loop muted playsinline disablePictureInPicture="true" aria-label="A looping video of a bunch of blue astronaut art being replaced with a vast expanse of solid blue.">
+                  <source src="./assets/videos/TBC_Unit4.webm" type="video/webm">
+                  Your browser does not support this video.
+                </video>
+                <div class="video-shade"></div>
+                <a id="video-TBC-Unit4-button" class="video-button" role="button" tabindex="0" aria-label="Pause Button" aria-describedby="video-TBC-Unit4-aria" aria-controls="video-TBC-Unit4" onclick="triggerVideo('video-TBC-Unit4-button', event)" onkeydown="triggerVideo('video-TBC-Unit4-button', event)">
+                  <picture>
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Light.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)">
+                    <source srcset="./assets/icons/FontAwesome_Circle-Pause_Dark.svg" media="(prefers-color-scheme: dark)">
+                    <img class="video-button-image" src="./assets/icons/FontAwesome_Circle-Pause_Light.svg" alt="">
+                  </picture>
+                  <div id="video-TBC-Unit4-aria" class="screen-reader-only" style="top: 51%; left: 50%;">You can pause the video using the "space" or "tab" keys.</div>
+                </a>
+              </div>
+              <div class="content-flavor">
+                <h3>Unit 4 (Knights of the Field)</h3>
+                <p>
+                  This Unit is the body of The Blue Corner.
+                  It is responsible for maintaining the sea of blue within our territory.
+                  This job excludes the bottom right corner pixel which Unit 1 is responsible for.
+                  This Unit, which is responsible for an enormous area, requires a lot of communication and coordination to clean it.
+                  In addition, this Unit frequently assists other Units and is frequently reassigned to other tasks by Congress.
+                </p>
+              </div>
+              <!-- End of Unit 4-->
+            </div>
+            <!-- End of Units -->
+          </div>
+          <!-- End of Chain of Command -->
+        </div>
+        <!-- End of Content -->
+      </main>
+
+      <!-- Footer of the page -->
+      <footer id="footer"></footer>
+
+      <!-- End of Page -->
+    </div>
+    
+    <!-- Scripts -->
+    <script src="./js/insertBanner.js" async></script>
+    <script src="./js/insertFooter.js" async></script>
+    <script src="./js/profilePicture.js" defer></script>
+    <script src="./js/scrollHandler.js" defer></script>
+    <script src="./js/accessibilityHandler.js" defer></script>
+  </body>
+</html>

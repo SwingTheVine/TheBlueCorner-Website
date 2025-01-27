@@ -1,0 +1,28 @@
+/* Title flavor text */
+#title-flavor {
+  display: block;
+  text-align: center;
+  margin: 0.25em auto;
+  max-width: 40ch;
+}
+
+/* Title flavor text when a quote */
+blockquote#title-flavor {
+  color: #E7E7E7;
+  font-size: smaller;
+  width: 100%;
+}
+
+/* Content image left override */
+.content-image-left {
+  grid-template-columns: 1fr 4fr;
+  margin-top: 4em;
+}
+
+/* <p>aragraph elements in content images
+excluding <p>aragraph elements inside flavors */
+.content-image-left p:not(div.content-image-flavor p) {
+  font-size: 5em;
+  margin: 0;
+  text-align: center;
+}

@@ -1,10 +1,25 @@
 // List of all site pages to search on
 const sitePagesArray = [
   '/index.html',
+  '/about.html',
   '/history.html',
   '/hall-of-fame.html',
   '/socials.html'
 ];
+
+// Retrieves the emoji tied to the web page
+function emojiFromPage(page) {
+  var emoji = "🟦"; // Fallback emoji
+  switch (page) {
+    case '/index.html': emoji = "🏠"; break;
+    case '/about.html': emoji = "🟦"; break;
+    case '/history.html': emoji = "📖"; break;
+    case '/hall-of-fame.html': emoji = "🏆"; break;
+    case '/socials.html': emoji = "👥"; break;
+    case '/search.html': emoji = "🔍"; break;
+  }
+  return emoji;
+}
 
 // Retrieve the URI
 const url_URI = window.location.search;
@@ -92,25 +107,6 @@ if ((searchQuery != null) && (searchQuery != '')) {
       }
     })
   });
-}
-
-function emojiFromPage(page) {
-  var emoji = "🟦";
-  switch (page) {
-    case '/index.html':
-      emoji = "🏠";
-      break;
-    case '/history.html':
-      emoji = "📖";
-      break;
-    case '/hall-of-fame.html':
-      emoji = "🏆";
-      break;
-    case '/socials.html':
-      emoji = "👥";
-      break;
-  }
-  return emoji;
 }
 
 /* START OF SEARCH PARSING
