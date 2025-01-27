@@ -6,7 +6,7 @@
 /* Author text */
 .history-author {
   text-align: center;
-  color: gray;
+  color: #767676;
   font-size: 1.25em;
   margin-top: 0;
 }
@@ -19,6 +19,7 @@ h2 {
 /* Headers 3, 4, and 5 */
 h3, h4, h5 {
   margin-top: 32px;
+  color: #767676;
 }
 
 /* Grid for sidebar and page */
@@ -59,7 +60,7 @@ h3, h4, h5 {
 
 /* Sidebar link h3, h4, h5 specific */
 .sidebar ol li ol li ol li a {
-  color: gray;
+  color: #767676;
 }
 
 /* Sidebar link h4, h5 specific */
