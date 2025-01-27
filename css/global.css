@@ -334,14 +334,15 @@ footer a:hover .footer-icon, footer a:focus .footer-icon,
 }
 
 /* Footer website navigation */
-.footer-nav {
+.footer-nav ul {
   margin: 0.5em 10% 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
 }
 
-.footer-nav a.link {
+/* Footer navigation link */
+.footer-nav li {
   flex: 1 1;
   width: max-content;
   margin-left: auto;
@@ -442,6 +443,7 @@ footer a:hover .footer-icon, footer a:focus .footer-icon,
 /* The little profile pictures */
 .profile-icon {
   border-radius: 50%;
+  height: 1em;
 }
 
 /* All <span> parents that have an <img> child with the "profile-icon" class */
@@ -589,9 +591,9 @@ span:has(img.profile-icon) {
   }
 
   /* The footer navigation is now 1 column */
-  .footer-nav {
+  .footer-nav ul {
     grid-template-columns: 1fr;
-    margin: auto;
+    margin: 0.5em auto;
   }
 
   /* Content images blocks are spaced further apart */
