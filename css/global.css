@@ -162,7 +162,7 @@
 .content-image-right {
   display: grid;
   grid-template-columns: 3fr 2fr;
-  margin-top: 32px;
+  margin-top: 2em;
 }
 
 /* Content image (left) */
