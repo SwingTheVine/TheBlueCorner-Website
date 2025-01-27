@@ -21,14 +21,12 @@ function emojiFromPage(page) {
   return emoji;
 }
 
-// Retrieve the URI
-const url_URI = window.location.search;
+const url_URI = window.location.search; // Retrieve the URI
 
 // Removes the leading "?" and makes an array of all URI keys and their values
 const uriKeys_URI = url_URI.substring(1).split('&');
 
-// Declares a null object array to store the URI keys
-const uriKeys_Array = {};
+const uriKeys_Array = {}; // Declares a null object array to store the URI keys
 
 // Lambda to store each key in the key object array
 uriKeys_URI.forEach(uriKey => {
@@ -41,24 +39,30 @@ var searchQuery = uriKeys_Array['q']; // The user's search query as a String
 // If the search query does NOT equal null (or undefined)...
 if ((searchQuery != null) && (searchQuery != '')) {
 
-  // Retrieve and store the search bar
-  const searchBar = document.getElementById('search-bar');
+  // Retrieve the search result parent container
+  const parentElement = document.getElementById('search-results');
 
-  // Change the text input
-  searchBar.value = searchQuery;
+  parentElement.innerHTML = ''; // Remove the pre-search blurb
+
+  // Spawn the throbber child
+  const throbber = document.createElement('li');
+  throbber.className = "throbber";
+  parentElement.appendChild(throbber);
+
+  const searchBar = document.getElementById('search-bar'); // Retrieve and store the search bar
+
+  searchBar.value = searchQuery; // Change the text input
 
   const searchRegex = new RegExp(searchQuery, 'gim'); // Search RegEx of user query
 
   // Searches
   fetchAndParsePages(sitePagesArray, searchRegex).then(results => {
-    const parentElement = document.getElementById('search-results');
-    parentElement.innerHTML = '';
+    parentElement.innerHTML = ''; // Removes the throbber
 
     results.forEach((result) => {
       if (result.count != 0) {
 
-        // Creates the list item element
-        const listItem = document.createElement('li');
+        const listItem = document.createElement('li'); // Creates the list item element
 
         // Creates the match anchor element
         const matchElement = document.createElement('a');
@@ -123,6 +127,8 @@ async function fetchAndParsePages(pages, regex) {
 
     // Tries to fetch the page content
     try {
+
+      // Retrieves the page's text
       const responsePage = await fetch(page);
       const responseText = await responsePage.text();
 
