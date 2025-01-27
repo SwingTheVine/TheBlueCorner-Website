@@ -30,71 +30,53 @@ h3, h4, h5 {
 /* Sidebar grid */
 .sidebar {
   background-color: white;
-  margin: 6.25em 1.5625em 0 1.5625em;
-  padding: 1em;
+  margin: 6.25em 1.25em 0;
+  padding: 0 1ch 1em 0;
   height: 32em;
-  width: 21ch;
-  justify-self: right;
-  display: grid;
-  grid-template-rows: auto;
+  width: 24ch;
   overflow: auto;
 }
 
 /* Sidebar styling shared between all links */
-.sidebar-link-h1,
-.sidebar-link-h2,
-.sidebar-link-h3,
-.sidebar-link-h4,
-.sidebar-link-h5 {
-  width: 20ch;
-  margin-bottom: 8px;
+.sidebar ol li a {
+  display: inline-block;
   font-weight: bold;
   text-decoration: none;
   color: black;
   border: 2px solid white;
+  word-break: break-word;
   transition:
     background-color 0.25s,
     border 0.25s;
 }
 
 /* Sidebar styling shared between all links when mouse-over or focused */
-.sidebar-link-h1:hover, .sidebar-link-h1:focus,
-.sidebar-link-h2:hover, .sidebar-link-h2:focus,
-.sidebar-link-h3:hover, .sidebar-link-h3:focus,
-.sidebar-link-h4:hover, .sidebar-link-h4:focus,
-.sidebar-link-h5:hover, .sidebar-link-h5:focus {
+.sidebar ol li a:hover, .sidebar ol li a:focus {
   background-color: lightgray;
   cursor: pointer;
   border: 2px solid black;
 }
 
-/* Sidebar link h2 specific */
-.sidebar-link-h2 {
-  width: 19ch;
-  padding-left: 1ch;
-}
-
 /* Sidebar link h3, h4, h5 specific */
-.sidebar-link-h3,
-.sidebar-link-h4,
-.sidebar-link-h5 {
+.sidebar ol li ol li ol li a {
   color: gray;
-  width: 18ch;
-  padding-left: 2ch;
 }
 
 /* Sidebar link h4, h5 specific */
-.sidebar-link-h4,
-.sidebar-link-h5 {
+.sidebar ol li ol li ol li ol li a{
   font-weight: normal;
-  width: 17ch;
-  padding-left: 3ch;
 }
 
-/* Sidebar link h5 specific */
-.sidebar-link-h5 {
-  width: 16ch;
-  padding-left: 4ch;
+.sidebar ol {
+  padding-left: 1ch;
+  margin: 0;
+  margin-top: 0.5em;
+}
+
+/* Removes all markers from the sidebar */
+.sidebar li {
+  margin-bottom: 0.5em;
+  display: block;
 }
 
 /* Dark mode */
@@ -106,29 +88,19 @@ h3, h4, h5 {
   }
 
   /* Sidebar links in dark mode */
-  .sidebar-link-h1,
-  .sidebar-link-h2,
-  .sidebar-link-h3,
-  .sidebar-link-h4,
-  .sidebar-link-h5 {
+  .sidebar ol li a {
     border-color: #1A2D51;
     color: #E7E7E7;
   }
 
   /* Sidebar links hovered/focused in dark mode */
-  .sidebar-link-h1:hover, .sidebar-link-h1:focus,
-  .sidebar-link-h2:hover, .sidebar-link-h2:focus,
-  .sidebar-link-h3:hover, .sidebar-link-h3:focus,
-  .sidebar-link-h4:hover, .sidebar-link-h4:focus,
-  .sidebar-link-h5:hover, .sidebar-link-h5:focus {
+  .sidebar ol li a:hover, .sidebar ol li a:focus {
     border-color: #E7E7E7;
     background-color: #204279;
   }
 
   /* Sidebar lower header colors in dark mode */
-  .sidebar-link-h3,
-  .sidebar-link-h4,
-  .sidebar-link-h5 {
+  .sidebar ol li ol li ol li a {
     color: #B0B0B0;
   }
 
@@ -142,11 +114,7 @@ h3, h4, h5 {
 @media (forced-colors: active) {
 
   /* Makes sidebar links visible in high contrast mode */
-  .sidebar-link-h1,
-  .sidebar-link-h2,
-  .sidebar-link-h3,
-  .sidebar-link-h4,
-  .sidebar-link-h5 {
+  .sidebar ol li a {
     color: AccentColorText;
     border: 2px solid ButtonText;
     transition:
@@ -154,11 +122,7 @@ h3, h4, h5 {
   }
 
   /* Sidebar links hovered/focused in high contrast mode */
-  .sidebar-link-h1:hover, .sidebar-link-h1:focus,
-  .sidebar-link-h2:hover, .sidebar-link-h2:focus,
-  .sidebar-link-h3:hover, .sidebar-link-h3:focus,
-  .sidebar-link-h4:hover, .sidebar-link-h4:focus,
-  .sidebar-link-h5:hover, .sidebar-link-h5:focus {
+  .sidebar ol li a:hover, .sidebar ol li a:focus {
     border: 2px solid Highlight;
   }
 
