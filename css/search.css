@@ -95,6 +95,11 @@ h2 {
   background-color: #C8C8C8;
 }
 
+/* Removes list formatting for search results */
+.no-marker#search-results {
+  padding: 0;
+}
+
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
   

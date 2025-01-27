@@ -42,6 +42,9 @@ if ((searchQuery != null) && (searchQuery != '')) {
     results.forEach((result) => {
       if (result.count != 0) {
 
+        // Creates the list item element
+        const listItem = document.createElement('li');
+
         // Creates the match anchor element
         const matchElement = document.createElement('a');
         matchElement.className = "search-results-match";
@@ -84,7 +87,8 @@ if ((searchQuery != null) && (searchQuery != '')) {
         matchElement.appendChild(gridRight);
 
         // Appends the grid
-        parentElement.appendChild(matchElement);
+        listItem.appendChild(matchElement);
+        parentElement.appendChild(listItem);
       }
     })
   });
