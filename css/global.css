@@ -327,7 +327,7 @@ footer {
 }
 
 /* Shakes the icons when hover/focused */
-.footer-icon:hover, .footer-icon:focus
+.footer-icon:hover, .footer-icon:focus,
 footer a:hover .footer-icon, footer a:focus .footer-icon,
 .banner-search-button:hover img, .banner-search-button:focus img {
   animation: shake 0.5s;
